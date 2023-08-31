@@ -55,10 +55,15 @@
   animation-duration: 2s;
 }
 .transition {
-  background-color: #e8f5e9; /*#eceff1;*/
+  background-color: #e8f5e9;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 4rem;
+}
+.centerMe {
+  align-items: center;
+  font-size: 2rem;
+  color: red;
 }
