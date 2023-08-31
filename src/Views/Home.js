@@ -14,7 +14,9 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import useContentful from "../Hooks/useContentful";
+//import useContentful from "../Hooks/useContentful";
+//import useContentful from "../Utils/useContentfulAPI";
+import useContentfulAPI from "../Utils/useContentfulAPI";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -38,7 +40,7 @@ const TitleWrapper = styled.div`
 const X = <FontAwesomeIcon icon={faTwitter} />;
 
 function Home() {
-  //const { getCarousel } = useContentful();
+  const { getCarousel } = useContentfulAPI();
   const [carousel, setCarousel] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
