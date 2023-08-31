@@ -14,6 +14,8 @@ const useContentful = () => {
         select: "fields",
       });
 
+      /* get entries */
+      let temp = [];
       let uniqueEntries = [];
       entries.items.forEach((obj) => {
         for (let p in obj) {
