@@ -61,11 +61,11 @@ function Home() {
 
     //console.log("carouselItems: ", carouselItems);
   };
-  console.log("carousel: ", carousel[1].name);
+  //console.log("carousel: ", carousel[1].name);
   return (
     <Wrapper>
       {carousel.map((item) =>
-        !isLoading > 0 ? (
+        !isLoading ? (
           <div key={carousel.index}>Carousel.name: {carousel[0].name}</div>
         ) : null
       )}
