@@ -22,6 +22,7 @@ const useContentful = () => {
           if (obj[p].index >= 0 && obj[p].index !== "undefined") {
             console.log("obj[p].fields", obj[p].fields);
             uniqueEntries.push(obj[p]);
+            console.log("obj[p].fields", obj[p].fields);
           }
         }
       });
