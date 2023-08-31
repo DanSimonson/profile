@@ -46,7 +46,7 @@ function Home() {
 
   useEffect(() => {
     fetchCarousel();
-    setLoading(false);
+    //setLoading(false);
   }, []);
 
   const fetchCarousel = async () => {
