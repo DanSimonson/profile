@@ -38,7 +38,7 @@ const TitleWrapper = styled.div`
 const X = <FontAwesomeIcon icon={faTwitter} />;
 
 function Home() {
-  const { getCarousel } = useContentful();
+  //const { getCarousel } = useContentful();
   const [carousel, setCarousel] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
