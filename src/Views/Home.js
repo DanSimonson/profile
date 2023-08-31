@@ -46,7 +46,6 @@ function Home() {
 
   useEffect(() => {
     fetchCarousel();
-    //setLoading(false);
   }, []);
 
   const fetchCarousel = async () => {
@@ -58,10 +57,8 @@ function Home() {
     } catch (error) {
       console.log("error: ", error);
     }
-
-    //console.log("carouselItems: ", carouselItems);
   };
-  //console.log("carousel: ", carousel[1].name);
+
   return (
     <Wrapper>
       {carousel.map((item) =>
