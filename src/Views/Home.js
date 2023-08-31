@@ -50,10 +50,35 @@ function Home() {
   }, []);
 
   const fetchCarousel = async () => {
-    const carouselItems = await getCarousel();
-    console.log("carouselItems: ", carouselItems);
-  };
+    try {
+      setLoading(true);
+      const carouselItems = await getCarousel();
+      setCarousel(carouselItems);
+      setLoading(false);
+    } catch (error) {
+      console.log("error: ", error);
+    }
 
-  return <div>helloWorld</div>;
+    //console.log("carouselItems: ", carouselItems);
+  };
+  console.log("carousel: ", carousel);
+  return (
+    <Wrapper>
+      {carousel.map((item) =>
+        !isLoading > 0 && carousel ? (
+          <div key={carousel.index}>Carousel.name: {carousel.name}</div>
+        ) : null
+      )}
+    </Wrapper>
+  );
 }
 export default Home;
+//{
+/* <div>
+  {data.map((record) => (
+    record.list.length > 0
+      ? (<YourRenderComponent record={record} key={record.id} />)
+      : null
+  ))}
+</div> */
+//}
