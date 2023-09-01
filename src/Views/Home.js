@@ -52,6 +52,7 @@ function Home() {
     try {
       setLoading(true);
       const carouselItems = await getCarousel();
+      console.log("carouselItems: ", carouselItems);
       setCarousel(carouselItems);
       setLoading(false);
     } catch (error) {
@@ -61,11 +62,11 @@ function Home() {
 
   return (
     <Wrapper>
-      {carousel.map((item) =>
+      {/* {carousel.map((item) =>
         !isLoading ? (
           <div key={carousel.index}>Carousel.name: {carousel[0].name}</div>
         ) : null
-      )}
+      )} */}
     </Wrapper>
   );
 }
