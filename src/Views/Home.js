@@ -49,34 +49,20 @@ function Home() {
   }, []);
 
   const fetchCarousel = async () => {
-    try {
-      setLoading(true);
-      const carouselItems = await getCarousel();
-      console.log("carouselItems: ", carouselItems);
-      setCarousel(carouselItems);
-      setLoading(false);
-    } catch (error) {
-      console.log("error: ", error);
+    let carouselList = [];
+    let carouselListTwo = [];
+    const carouselItems = await getCarousel();
+    for (let i = 0; i <= carouselItems.items.length - 1; i++) {
+      if (carouselItems.items[i].fields.index === 1) {
+        carouselList.push(carouselItems.items[i].fields);
+      } else if (carouselItems.items[i].fields.index === 2) {
+        carouselListTwo.push(carouselItems.items[i].fields);
+      }
     }
+    return carouselListTwo;
   };
-
-  return (
-    <Wrapper>
-      {/* {carousel.map((item) =>
-        !isLoading ? (
-          <div key={carousel.index}>Carousel.name: {carousel[0].name}</div>
-        ) : null
-      )} */}
-    </Wrapper>
-  );
+  const showCarousel = (list, carouselItems) => {
+    console.log("list: ", list);
+  };
 }
 export default Home;
-//{
-/* <div>
-  {data.map((record) => (
-    record.list.length > 0
-      ? (<YourRenderComponent record={record} key={record.id} />)
-      : null
-  ))}
-</div> */
-//}
