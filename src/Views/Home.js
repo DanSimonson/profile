@@ -58,75 +58,16 @@ function Home() {
         carouselList.push(carouselItems.items[i].fields);
       } else if (carouselItems.items[i].fields.index === 2) {
         carouselList.push(carouselItems.items[i].fields);
-        //   //carouselListTwo.push(carouselItems.items[i].fields);
-        //   console.log(carouselList);
-        //   let carouselArr = carouselList.map((arr) => {
-        //     return { ...arr };
-      }
-      //   console.log("carouselArr: ", carouselArr);
-      //   //let array2 = array.map(a => {return {...a}})
-      //   //let nwArray = carouselItems.items[i].fields.pop();
-      //   //console.log("nwArray: ", nwArray);
-      // }
-      //const avatar = item.fields.avatar.fields;
-      if (typeof carouselItems.items[i].fields.index === "number") {
-        let tempVal = carouselItems.items[i].fields;
-        //carouselData.concat(tempVal);
-
-        /**
-         * let dataObject = {};
-
-         data.forEach(datum => {
-       if (!Object.hasOwnProperty(datum.name)) {
-       dataObject[datum.name] = datum;
-  }
-});
-
-console.log(Object.values(dataObject));
-         */
-        //if(carouselItems.items[i].fields.index )
-        //carouselData = { ...carouselData, ...tempVal };
-        //setCarousel((carousel) => [...carousel, tempVal]);
-
-        //console.log("tempVal: ", tempVal);
-        //let newArr = [];
-        //newArr.push(tempVal);
-        //setTheArray(oldArray => [...oldArray, newElement]);
-        //carouselItems.items[i].fields);
-        //console.log(typeof carouselItems.items[i].fields.index);
-        //carouselList.push(carouselItems.items[i].fields);
-        //if (typeof carouselItems.items[i].fields!== 'undefined') {
-        // if (
-        //   carouselList.items[i].fields.index !==
-        //   carouselList.items[i].fields.index - 1
-        // )
-        //carouselList.push(carouselItems.items[i].fields);
-        //}
-        //console.log(typeof carouselItems.items[i].fields.index);
       }
       showCarousel(carouselList);
-      //   if (typeof maybeObject != "undefined") {
-      //     alert("GOT THERE");
-      //  }
     }
-    //   var newArray = new Array (
-    //     dataArray1.values(),
-    //     dataArray2.values(),
-    //     // ... where values() (or something equivalent) would push the individual values into the array, rather than the array itself
-    //  );
-    //put object --- into an array
-    //let temp = []
-    //let nwTemp = temp.push()
-    //let nwTemp =
-    //let items = new Array(carouselList, carouselListTwo);
-    //let result = newArray(items, [])
-    //console.log("items: ", items);
-    //console.log("carousel: ", carousel);
     showCarousel(carouselList);
     return carouselListTwo;
   };
   const showCarousel = (carouselData) => {
-    console.log("showCarousel carousel: ", carouselData);
+    if (carouselData.length < 2) {
+      console.log("showCarousel carousel: ", carouselData);
+    }
   };
 }
 export default Home;
