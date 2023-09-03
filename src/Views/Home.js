@@ -17,6 +17,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import useContentfulAPI from "../Utils/useContentfulAPI";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Wrapper = styled.div`
   font-family: "Roboto";
@@ -41,7 +42,7 @@ const X = <FontAwesomeIcon icon={faTwitter} />;
 function Home() {
   const { getCarousel } = useContentfulAPI();
   let [carousel, setCarousel] = useState([]);
-
+  let navigate = useNavigate();
   useEffect(() => {
     fetchCarousel();
   }, []);
