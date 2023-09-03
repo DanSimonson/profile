@@ -14,8 +14,6 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-//import useContentful from "../Hooks/useContentful";
-//import useContentful from "../Utils/useContentfulAPI";
 import useContentfulAPI from "../Utils/useContentfulAPI";
 import styled from "styled-components";
 
@@ -69,6 +67,7 @@ function Home() {
   const getUniqueCarousel = (carouselData, length) => {
     if (carouselData.length < length) {
       console.log("Unique Carousel Array of Objects: ", carouselData);
+
       return carouselData;
     }
   };
