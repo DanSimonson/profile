@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShowCarousel from "../Components/ShowCarousel";
 import Navbar from "../Components/Navbar/Navbar";
 import "animate.css";
-import "./Home.css";
+import "./Home.scss";
 import {
   faGraduationCap,
   faBriefcase,
@@ -76,8 +76,12 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div>
-        <ShowCarousel carouselList={carousel} />
+      <div id="parent">
+        <h1>hello world</h1>
+
+        {/* <div>
+          <ShowCarousel carouselList={carousel} />
+        </div> */}
       </div>
     </>
   );
