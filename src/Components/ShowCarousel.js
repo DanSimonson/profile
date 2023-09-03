@@ -2,9 +2,9 @@ import React from "react";
 import Home from "../Views/Home";
 
 function ShowCarousel() {
-  let val = Home.getUniqueCarousel();
+  let val = Home.ShowCarousel();
   console.log("val: ", val);
-  return <div>ShowCarousel: {val}</div>;
+  return <div>ShowCarousel: hello world</div>;
 }
 
 export default ShowCarousel;

@@ -67,7 +67,6 @@ function Home() {
   const getUniqueCarousel = (carouselData, length) => {
     if (carouselData.length < length) {
       console.log("Unique Carousel Array of Objects: ", carouselData);
-
       return carouselData;
     }
   };
