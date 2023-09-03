@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShowCarousel from "../Components/ShowCarousel";
+import Navbar from "../Components/Navbar/Navbar";
 import "animate.css";
 import "./Home.css";
 import {
@@ -73,9 +74,12 @@ function Home() {
   };
 
   return (
-    <div>
-      <ShowCarousel carouselList={carousel} />
-    </div>
+    <>
+      <Navbar />
+      <div>
+        <ShowCarousel carouselList={carousel} />
+      </div>
+    </>
   );
 }
 export default Home;
