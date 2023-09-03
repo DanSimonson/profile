@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ShowCarousel from "../Components/ShowCarousel";
 import "animate.css";
 import "./Home.css";
 import {
@@ -40,7 +41,6 @@ const X = <FontAwesomeIcon icon={faTwitter} />;
 function Home() {
   const { getCarousel } = useContentfulAPI();
   let [carousel, setCarousel] = useState([]);
-  let [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchCarousel();
@@ -62,14 +62,19 @@ function Home() {
       }
       getUniqueCarousel(carouselList, carouselItems.items.length);
     }
-    return carouselList;
   };
+
+  const getUniqueCarousel = (carouselData, length) => {
+    if (carouselData.length < length) {
+      setCarousel(carouselData);
+      return carouselData;
+    }
+  };
+
+  return (
+    <div>
+      <ShowCarousel carouselList={carousel} />
+    </div>
+  );
 }
 export default Home;
-
-export const getUniqueCarousel = (carouselData, length) => {
-  if (carouselData.length < length) {
-    console.log("Unique Carousel Array of Objects: ", carouselData);
-    return carouselData;
-  }
-};
