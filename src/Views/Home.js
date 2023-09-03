@@ -50,23 +50,26 @@ function Home() {
 
   const fetchCarousel = async () => {
     let carouselList = [];
-    let carouselListTwo = [];
-    let carouselData = {};
     const carouselItems = await getCarousel();
+
     for (let i = 0; i <= carouselItems.items.length - 1; i++) {
       if (carouselItems.items[i].fields.index === 1) {
-        carouselList.push(carouselItems.items[i].fields);
+        if (carouselList.length < 2) {
+          carouselList.push(carouselItems.items[i].fields);
+        }
       } else if (carouselItems.items[i].fields.index === 2) {
-        carouselList.push(carouselItems.items[i].fields);
+        if (carouselList.length < 2) {
+          carouselList.push(carouselItems.items[i].fields);
+        }
       }
-      showCarousel(carouselList);
+      getUniqueCarousel(carouselList, carouselItems.items.length);
     }
-    showCarousel(carouselList);
-    return carouselListTwo;
+    return carouselList;
   };
-  const showCarousel = (carouselData) => {
-    if (carouselData.length < 2) {
-      console.log("showCarousel carousel: ", carouselData);
+  const getUniqueCarousel = (carouselData, length) => {
+    if (carouselData.length < length) {
+      console.log("Unique Carousel Array of Objects: ", carouselData);
+      return carouselData;
     }
   };
 }
