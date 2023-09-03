@@ -54,11 +54,11 @@ function Home() {
 
     for (let i = 0; i <= carouselItems.items.length - 1; i++) {
       if (carouselItems.items[i].fields.index === 1) {
-        if (carouselList.length < 2) {
+        if (carouselList.length < carouselItems.items.length) {
           carouselList.push(carouselItems.items[i].fields);
         }
       } else if (carouselItems.items[i].fields.index === 2) {
-        if (carouselList.length < 2) {
+        if (carouselList.length < carouselItems.items.length) {
           carouselList.push(carouselItems.items[i].fields);
         }
       }
