@@ -51,18 +51,18 @@ function Home() {
   const fetchCarousel = async () => {
     let carouselList = [];
     let carouselListTwo = [];
-    let carouselData = [];
+    let carouselData = {};
     const carouselItems = await getCarousel();
     for (let i = 0; i <= carouselItems.items.length - 1; i++) {
-      // if (carouselItems.items[i].fields.index === 1) {
-      //   carouselList.push(carouselItems.items[i].fields);
-      // } else if (carouselItems.items[i].fields.index === 2) {
-      //   //carouselList.push(carouselItems.items[i].fields);
-      //   //carouselListTwo.push(carouselItems.items[i].fields);
-      //   console.log(carouselList);
-      //   let carouselArr = carouselList.map((arr) => {
-      //     return { ...arr };
-      //   });
+      if (carouselItems.items[i].fields.index === 1) {
+        carouselList.push(carouselItems.items[i].fields);
+      } else if (carouselItems.items[i].fields.index === 2) {
+        carouselList.push(carouselItems.items[i].fields);
+        //   //carouselListTwo.push(carouselItems.items[i].fields);
+        //   console.log(carouselList);
+        //   let carouselArr = carouselList.map((arr) => {
+        //     return { ...arr };
+      }
       //   console.log("carouselArr: ", carouselArr);
       //   //let array2 = array.map(a => {return {...a}})
       //   //let nwArray = carouselItems.items[i].fields.pop();
@@ -71,7 +71,22 @@ function Home() {
       //const avatar = item.fields.avatar.fields;
       if (typeof carouselItems.items[i].fields.index === "number") {
         let tempVal = carouselItems.items[i].fields;
-        setCarousel((carousel) => [...carousel, tempVal]);
+        //carouselData.concat(tempVal);
+
+        /**
+         * let dataObject = {};
+
+         data.forEach(datum => {
+       if (!Object.hasOwnProperty(datum.name)) {
+       dataObject[datum.name] = datum;
+  }
+});
+
+console.log(Object.values(dataObject));
+         */
+        //if(carouselItems.items[i].fields.index )
+        //carouselData = { ...carouselData, ...tempVal };
+        //setCarousel((carousel) => [...carousel, tempVal]);
 
         //console.log("tempVal: ", tempVal);
         //let newArr = [];
@@ -89,7 +104,7 @@ function Home() {
         //}
         //console.log(typeof carouselItems.items[i].fields.index);
       }
-      showCarousel();
+      showCarousel(carouselList);
       //   if (typeof maybeObject != "undefined") {
       //     alert("GOT THERE");
       //  }
@@ -107,11 +122,11 @@ function Home() {
     //let result = newArray(items, [])
     //console.log("items: ", items);
     //console.log("carousel: ", carousel);
-    showCarousel();
+    showCarousel(carouselList);
     return carouselListTwo;
   };
-  const showCarousel = () => {
-    console.log("showCarousel carousel: ", carousel);
+  const showCarousel = (carouselData) => {
+    console.log("showCarousel carousel: ", carouselData);
   };
 }
 export default Home;
