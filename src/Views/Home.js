@@ -64,11 +64,12 @@ function Home() {
     }
     return carouselList;
   };
-  const getUniqueCarousel = (carouselData, length) => {
-    if (carouselData.length < length) {
-      console.log("Unique Carousel Array of Objects: ", carouselData);
-      return carouselData;
-    }
-  };
 }
 export default Home;
+
+export const getUniqueCarousel = (carouselData, length) => {
+  if (carouselData.length < length) {
+    console.log("Unique Carousel Array of Objects: ", carouselData);
+    return carouselData;
+  }
+};
