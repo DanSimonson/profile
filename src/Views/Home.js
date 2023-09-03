@@ -41,8 +41,8 @@ const X = <FontAwesomeIcon icon={faTwitter} />;
 
 function Home() {
   const { getCarousel } = useContentfulAPI();
-  const [carousel, setCarousel] = useState([]);
-  const [isLoading, setLoading] = useState(true);
+  let [carousel, setCarousel] = useState([]);
+  let [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchCarousel();
@@ -51,18 +51,67 @@ function Home() {
   const fetchCarousel = async () => {
     let carouselList = [];
     let carouselListTwo = [];
+    let carouselData = [];
     const carouselItems = await getCarousel();
     for (let i = 0; i <= carouselItems.items.length - 1; i++) {
-      if (carouselItems.items[i].fields.index === 1) {
-        carouselList.push(carouselItems.items[i].fields);
-      } else if (carouselItems.items[i].fields.index === 2) {
-        carouselListTwo.push(carouselItems.items[i].fields);
+      // if (carouselItems.items[i].fields.index === 1) {
+      //   carouselList.push(carouselItems.items[i].fields);
+      // } else if (carouselItems.items[i].fields.index === 2) {
+      //   //carouselList.push(carouselItems.items[i].fields);
+      //   //carouselListTwo.push(carouselItems.items[i].fields);
+      //   console.log(carouselList);
+      //   let carouselArr = carouselList.map((arr) => {
+      //     return { ...arr };
+      //   });
+      //   console.log("carouselArr: ", carouselArr);
+      //   //let array2 = array.map(a => {return {...a}})
+      //   //let nwArray = carouselItems.items[i].fields.pop();
+      //   //console.log("nwArray: ", nwArray);
+      // }
+      //const avatar = item.fields.avatar.fields;
+      if (typeof carouselItems.items[i].fields.index === "number") {
+        let tempVal = carouselItems.items[i].fields;
+        setCarousel((carousel) => [...carousel, tempVal]);
+
+        //console.log("tempVal: ", tempVal);
+        //let newArr = [];
+        //newArr.push(tempVal);
+        //setTheArray(oldArray => [...oldArray, newElement]);
+        //carouselItems.items[i].fields);
+        //console.log(typeof carouselItems.items[i].fields.index);
+        //carouselList.push(carouselItems.items[i].fields);
+        //if (typeof carouselItems.items[i].fields!== 'undefined') {
+        // if (
+        //   carouselList.items[i].fields.index !==
+        //   carouselList.items[i].fields.index - 1
+        // )
+        //carouselList.push(carouselItems.items[i].fields);
+        //}
+        //console.log(typeof carouselItems.items[i].fields.index);
       }
+      showCarousel();
+      //   if (typeof maybeObject != "undefined") {
+      //     alert("GOT THERE");
+      //  }
     }
+    //   var newArray = new Array (
+    //     dataArray1.values(),
+    //     dataArray2.values(),
+    //     // ... where values() (or something equivalent) would push the individual values into the array, rather than the array itself
+    //  );
+    //put object --- into an array
+    //let temp = []
+    //let nwTemp = temp.push()
+    //let nwTemp =
+    //let items = new Array(carouselList, carouselListTwo);
+    //let result = newArray(items, [])
+    //console.log("items: ", items);
+    //console.log("carousel: ", carousel);
+    showCarousel();
     return carouselListTwo;
   };
-  const showCarousel = (list, carouselItems) => {
-    console.log("list: ", list);
+  const showCarousel = () => {
+    console.log("showCarousel carousel: ", carousel);
   };
 }
 export default Home;
