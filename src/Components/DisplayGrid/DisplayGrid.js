@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from "react";
 import "./DisplayGrid.scss";
-import Carousel from "../Carousel/Carousel";
+//import Carousel from "../Carousel/Carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { listCards } from "../../Actions/CardActions";
 import { useSelector, useDispatch } from "react-redux";
-import SyncLoader from "react-spinners/SyncLoader";
+//import SyncLoader from "react-spinners/SyncLoader";
 
 function DisplayGrid() {
-  let dispatch = useDispatch();
-  const cardStuff = useSelector((state) => state.cardPosts);
-  let cardArray = []
-  if (cardStuff.loading === false) {
-    let tempItem = cardStuff.listCards.slice(3, 4)
-    let tempArray = cardStuff.listCards.filter((card) => card.title !== "Next Egg");
-    cardArray = [...tempArray, ...tempItem];
-  }
+  //let dispatch = useDispatch();
+  //const cardStuff = useSelector((state) => state.cardPosts);
+  let cardArray = [];
+  // if (cardStuff.loading === false) {
+  //   let tempItem = cardStuff.listCards.slice(3, 4);
+  //   let tempArray = cardStuff.listCards.filter(
+  //     (card) => card.title !== "Next Egg"
+  //   );
+  //   cardArray = [...tempArray, ...tempItem];
+  // }
 
   useEffect(() => {
     const cardElement = document.querySelector(".card__inner");
@@ -30,9 +32,9 @@ function DisplayGrid() {
     });
   }, []);
 
-  useEffect(() => {
-    dispatch(listCards());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(listCards());
+  // }, [dispatch]);
   return (
     <React.Fragment>
       <div className="bodyWrap">
@@ -106,7 +108,7 @@ function DisplayGrid() {
           </div>
         </div>
         <div className="display-container">
-          {cardStuff.loading ? (
+          {/* {cardStuff.loading ? (
             <>
               <SyncLoader loading color="orange" />
               <h1 style={{ color: "orange" }}>loading...</h1>
@@ -127,13 +129,13 @@ function DisplayGrid() {
                 </div>
               ))}
             </>
-          )}
+          )} */}
         </div>
 
         <div className="carouselSection">
           <div className="background-animation-container">
             <div className="transitionToCarousel">Some Personal Projects</div>
-            <Carousel />
+            {/* <Carousel /> */}
           </div>
         </div>
       </div>
