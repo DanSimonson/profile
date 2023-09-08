@@ -130,7 +130,7 @@ function Carousel({ carousel }) {
     <div className="Carousel">
       <div className="slider-wrapper">
         <Slider {...settings} dots="false">
-          {slidesData.map((slide) => (
+          {carousel.map((slide) => (
             <div
               className="slick-slide"
               key={slide.id}
