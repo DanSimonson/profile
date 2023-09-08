@@ -3,8 +3,8 @@ import "./DisplayGrid.scss";
 //import Carousel from "../Carousel/Carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { listCards } from "../../Actions/CardActions";
-import { useSelector, useDispatch } from "react-redux";
+//import { listCards } from "../../Actions/CardActions";
+//import { useSelector, useDispatch } from "react-redux";
 import useContentfulAPI from "../../Utils/useContentfulAPI";
 //import SyncLoader from "react-spinners/SyncLoader";
 
@@ -40,6 +40,25 @@ function DisplayGrid() {
     let carouselList = [];
     const carouselItems = await getCarousel();
     console.log("carouselItems.items: ", carouselItems.items);
+    for (let i = 0; i <= carouselItems.items.length - 1; i++) {
+      if (carouselItems.items[i].fields.index === 1) {
+        if (carouselList.length < carouselItems.items.length) {
+          carouselList.push(carouselItems.items[i].fields);
+        }
+      } else if (carouselItems.items[i].fields.index === 2) {
+        if (carouselList.length < carouselItems.items.length) {
+          carouselList.push(carouselItems.items[i].fields);
+        }
+      }
+      getUniqueCarousel(carouselList, carouselItems.items.length);
+    }
+  };
+
+  const getUniqueCarousel = (carouselData, length) => {
+    if (carouselData.length < length) {
+      setCarousel(carouselData);
+      return carouselData;
+    }
   };
 
   // useEffect(() => {
