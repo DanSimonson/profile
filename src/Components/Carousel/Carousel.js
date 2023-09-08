@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 
-function Carousel() {
+function Carousel({ carousel }) {
+  console.log("carousel: ", carousel);
   let navigate = useNavigate();
   const settings = {
     dots: true,

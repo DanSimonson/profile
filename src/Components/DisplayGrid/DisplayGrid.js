@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from "react";
 import "./DisplayGrid.scss";
-//import Carousel from "../Carousel/Carousel";
+import Carousel from "../Carousel/Carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//import { listCards } from "../../Actions/CardActions";
-//import { useSelector, useDispatch } from "react-redux";
+import { listCards } from "../../Actions/CardActions";
+import { useSelector, useDispatch } from "react-redux";
 import useContentfulAPI from "../../Utils/useContentfulAPI";
-//import SyncLoader from "react-spinners/SyncLoader";
+import SyncLoader from "react-spinners/SyncLoader";
 
 function DisplayGrid() {
   const { getCarousel } = useContentfulAPI();
   let [carousel, setCarousel] = useState([]);
   //let dispatch = useDispatch();
-  //const cardStuff = useSelector((state) => state.cardPosts);
+  const cardStuff = useSelector((state) => state.cardPosts);
   let cardArray = [];
-  // if (cardStuff.loading === false) {
+  //console.log("cardStuff: ", cardStuff);
+  //if (cardStuff.loading === false) {
   //   let tempItem = cardStuff.listCards.slice(3, 4);
   //   let tempArray = cardStuff.listCards.filter(
   //     (card) => card.title !== "Next Egg"
   //   );
   //   cardArray = [...tempArray, ...tempItem];
-  // }
+  //}
 
   useEffect(() => {
     fetchCarousel();
@@ -164,7 +165,7 @@ function DisplayGrid() {
         <div className="carouselSection">
           <div className="background-animation-container">
             <div className="transitionToCarousel">Some Personal Projects</div>
-            {/* <Carousel /> */}
+            <Carousel carousel={carousel} />
           </div>
         </div>
       </div>
