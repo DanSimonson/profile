@@ -5,9 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { listCards } from "../../Actions/CardActions";
 import { useSelector, useDispatch } from "react-redux";
+import useContentfulAPI from "../../Utils/useContentfulAPI";
 //import SyncLoader from "react-spinners/SyncLoader";
 
 function DisplayGrid() {
+  const { getCarousel } = useContentfulAPI();
+  let [carousel, setCarousel] = useState([]);
   //let dispatch = useDispatch();
   //const cardStuff = useSelector((state) => state.cardPosts);
   let cardArray = [];
@@ -20,6 +23,7 @@ function DisplayGrid() {
   // }
 
   useEffect(() => {
+    fetchCarousel();
     const cardElement = document.querySelector(".card__inner");
     const toggleButton = document.getElementsByClassName(
       "displaygrid_toggle_button"
@@ -31,6 +35,12 @@ function DisplayGrid() {
       cardElement.classList.toggle("is-flipped");
     });
   }, []);
+
+  const fetchCarousel = async () => {
+    let carouselList = [];
+    const carouselItems = await getCarousel();
+    console.log("carouselItems.items: ", carouselItems.items);
+  };
 
   // useEffect(() => {
   //   dispatch(listCards());
