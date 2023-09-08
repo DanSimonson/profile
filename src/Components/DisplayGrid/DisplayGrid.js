@@ -7,13 +7,26 @@ import { listCards } from "../../Actions/CardActions";
 import { useSelector, useDispatch } from "react-redux";
 import useContentfulAPI from "../../Utils/useContentfulAPI";
 import SyncLoader from "react-spinners/SyncLoader";
+import data from "../../data";
 
 function DisplayGrid() {
   const { getCarousel } = useContentfulAPI();
   let [carousel, setCarousel] = useState([]);
-  //let dispatch = useDispatch();
-  const cardStuff = useSelector((state) => state.cardPosts);
   let cardArray = [];
+  //console.log("data.projects: ", data.projects);
+  //let tempItem = data.projects.splice(3, 4);
+  let tempArray = data.cards.filter((card) => card.title !== "Next Egg");
+  console.log("tempArray: ", tempArray);
+  //cardArray = [...tempArray, ...tempItem];
+  //console.log("cardArray: ", cardArray);
+  //console.log("tempItem: ", tempItem);
+  //console.log("data.projects: ", data.projects);
+  //console.log("data.cards: ", data.cards);
+  //const cardStuff = useSelector((state) => state.cardPosts);
+  //console.log("cardStuff: ", cardStuff);
+  //let dispatch = useDispatch();
+  //const cardStuff = useSelector((state) => state.cardPosts);
+  //let cardArray = [];
   //console.log("cardStuff: ", cardStuff);
   //if (cardStuff.loading === false) {
   //   let tempItem = cardStuff.listCards.slice(3, 4);
@@ -138,7 +151,32 @@ function DisplayGrid() {
           </div>
         </div>
         <div className="display-container">
-          {/* {cardStuff.loading ? (
+          {tempArray.map((card, index) => (
+            <div key={card.id} className="display-card animateCard">
+              <div className="display-content">
+                <h3>{card.title}</h3>
+                <p>{card.content}</p>
+              </div>
+            </div>
+          ))}
+          )
+        </div>
+
+        <div className="carouselSection">
+          <div className="background-animation-container">
+            <div className="transitionToCarousel">Some Personal Projects</div>
+            <Carousel carousel={data.projects} />
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+}
+
+export default DisplayGrid;
+
+/**
+ * {cardStuff.loading ? (
             <>
               <SyncLoader loading color="orange" />
               <h1 style={{ color: "orange" }}>loading...</h1>
@@ -148,29 +186,5 @@ function DisplayGrid() {
               <SyncLoader loading color="orange" />
               {cardStuff.error}
             </div>
-          ) : (
-            <>
-              {cardArray.map((card, index) => (
-                <div key={card.id} className="display-card animateCard">
-                  <div className="display-content">
-                    <h3>{card.title}</h3>
-                    <p>{card.content}</p>
-                  </div>
-                </div>
-              ))}
-            </>
-          )} */}
-        </div>
-
-        <div className="carouselSection">
-          <div className="background-animation-container">
-            <div className="transitionToCarousel">Some Personal Projects</div>
-            <Carousel carousel={carousel} />
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
-  );
-}
-
-export default DisplayGrid;
+          )
+ */
