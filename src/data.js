@@ -56,14 +56,14 @@ const data = {
       picture:
         "https://res.cloudinary.com/dmglopmul/image/upload/v1560315041/projectPhotos/dossier/heroimage1.jpg",
     },
-    {
-      index: 7,
-      name: "hooks-redux",
-      link: "https://brave-galileo-008804.netlify.app/",
-      url: "https://github.com/DanSimonson/ducks_redux",
-      picture:
-        "https://res.cloudinary.com/dmglopmul/image/upload/v1614038405/projectPhotos/dossier/template_primary.jpg",
-    },
+    // {
+    //   index: 7,
+    //   name: "hooks-redux",
+    //   link: "https://brave-galileo-008804.netlify.app/",
+    //   url: "https://github.com/DanSimonson/ducks_redux",
+    //   picture:
+    //     "https://res.cloudinary.com/dmglopmul/image/upload/v1614038405/projectPhotos/dossier/template_primary.jpg",
+    // },
     // {
     //   index: 8,
     //   name: "customer-list",

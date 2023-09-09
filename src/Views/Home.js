@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShowCarousel from "../Components/ShowCarousel";
 import Navbar from "../Components/Navbar/Navbar";
 import DisplayGrid from "../Components/DisplayGrid/DisplayGrid";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "animate.css";
 import "./Home.scss";
 import {
@@ -45,6 +47,7 @@ function Home() {
   let [carousel, setCarousel] = useState([]);
   let navigate = useNavigate();
   useEffect(() => {
+    AOS.init();
     fetchCarousel();
   }, []);
 
