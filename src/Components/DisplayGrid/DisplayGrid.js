@@ -37,7 +37,6 @@ function DisplayGrid() {
   //}
 
   useEffect(() => {
-    fetchCarousel();
     const cardElement = document.querySelector(".card__inner");
     const toggleButton = document.getElementsByClassName(
       "displaygrid_toggle_button"
@@ -48,6 +47,7 @@ function DisplayGrid() {
     cardElement.addEventListener("click", function (e) {
       cardElement.classList.toggle("is-flipped");
     });
+    //fetchCarousel();
   }, []);
 
   const fetchCarousel = async () => {
