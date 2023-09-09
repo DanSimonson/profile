@@ -47,7 +47,7 @@ function Home() {
   let [carousel, setCarousel] = useState([]);
   let navigate = useNavigate();
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 2000 });
     fetchCarousel();
   }, []);
 
