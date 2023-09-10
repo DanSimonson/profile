@@ -120,7 +120,15 @@ function DisplayGrid() {
             years of experience to help my clients achieve their goals.
           </p>
         </div>
-        <div className="card_outer">
+        <div className="card-grid">
+          <div className="card">
+            <div>
+              <div className="front">Hello Front</div>
+              <div className="back">Hello Back</div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="card_outer">
           <div className="card__inner">
             <div className="card__face card__face--front">
               <div className="card__content">
@@ -149,7 +157,7 @@ function DisplayGrid() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="display-container">
           {tempArray.map((card, index) => (
             <div key={card.id} className="display-card animateCard">
