@@ -131,6 +131,9 @@
 .card__inner.is-flipped {
   transform: rotateX(180deg);
 }
+.is-flipped {
+  transform: rotateX(180deg);
+}
 .card__face {
   border: 1px solid #f5d020;
   position: absolute;

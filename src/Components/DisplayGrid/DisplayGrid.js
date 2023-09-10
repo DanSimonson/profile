@@ -36,19 +36,19 @@ function DisplayGrid() {
   //   cardArray = [...tempArray, ...tempItem];
   //}
 
-  useEffect(() => {
-    const cardElement = document.querySelector(".card__inner");
-    const toggleButton = document.getElementsByClassName(
-      "displaygrid_toggle_button"
-    )[0];
-    const navbarLinks = document.getElementsByClassName(
-      "displaygrid_navbar_links"
-    )[0];
-    cardElement.addEventListener("click", function (e) {
-      cardElement.classList.toggle("is-flipped");
-    });
-    //fetchCarousel();
-  }, []);
+  // useEffect(() => {
+  //   const cardElement = document.querySelector(".card__inner");
+  //   const toggleButton = document.getElementsByClassName(
+  //     "displaygrid_toggle_button"
+  //   )[0];
+  //   const navbarLinks = document.getElementsByClassName(
+  //     "displaygrid_navbar_links"
+  //   )[0];
+  //   cardElement.addEventListener("click", function (e) {
+  //     cardElement.classList.toggle("is-flipped");
+  //   });
+  //   //fetchCarousel();
+  // }, []);
 
   const fetchCarousel = async () => {
     let carouselList = [];
