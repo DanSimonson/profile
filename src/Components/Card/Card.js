@@ -2,6 +2,7 @@ import "./Card.scss";
 
 export default function SingleCard() {
   const card = "";
+  const handleChoice = (card) => {};
   const handleClick = () => {
     handleChoice(card);
   };
