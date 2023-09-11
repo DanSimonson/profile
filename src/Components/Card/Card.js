@@ -10,6 +10,10 @@ export default function SingleCard() {
 
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
+    if (card === choiceOne || card === choiceTwo) {
+      console.log("choiceOne ==== :", choiceOne);
+      console.log("choiceTwo ==== :", choiceTwo);
+    }
   };
   const handleClick = () => {
     handleChoice(card);
