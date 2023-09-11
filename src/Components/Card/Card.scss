@@ -1,110 +1,26 @@
 /** flip card css **/
+
 .card__body {
-  width: 100%;
-  height: 100%;
   background-color: #f5d020;
   background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
-  //transition: transform 1s;
-  //transform-style: preserve-3d;
+  border: 1px solid #f5d020;
+  -webkit-box-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px,
+    red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px,
+    red 0 -18px 40px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  //margin: 40px auto 40px auto;
+  width: 600px;
+  height: 600px;
+  perspective: 1000px;
+  border-radius: 50%;
+  background-color: #f5d020;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
   cursor: pointer;
-  //   position: relative;
 }
-// .card_outer {
-//   margin: 40px auto 40px auto;
-//   width: 300px;
-//   height: 400px;
-//   perspective: 1000px;
-// }
-// .card__inner {
-//   width: 100%;
-//   height: 100%;
-//   transition: transform 1s;
-//   transform-style: preserve-3d;
-//   cursor: pointer;
-//   position: relative;
-// }
-// // .card__inner.is-flipped {
-// //   transform: rotateX(180deg);
-// // }
-// .card__inner.flip {
-//   transform: rotateX(180deg);
-// }
-// .card__face {
-//   border: 1px solid #f5d020;
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   -webkit-backface-visibility: hidden;
-//   backface-visibility: hidden;
-//   overflow: hidden;
-//   border-radius: 50%;
-//   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-// }
-// .card__face--front {
-//   background-color: #f5d020;
-//   background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-// .card__face--back {
-//   background-color: #f5d020;
-//   background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
-//   transform: rotateX(180deg);
-// }
-// .card__content {
-//   width: 100%;
-//   height: 100%;
-// }
-// .card__body {
-//   padding: 70px 60px 50px 60px;
-//   text-align: center;
-// }
-// .card__body h3 {
-//   color: var(--dark);
-//   font-size: 18px;
-//   font-weight: 600;
-//   margin-bottom: 15px;
-// }
-// .card__body p {
-//   color: var(--dark);
-//   font-size: 16px;
-//   line-height: 1.4;
-// }
-// .more {
-//   margin-top: 15px;
-// }
+.centerMe {
+  //border: 5px solid red;
+  display: flex;
+  justify-content: center;
+}
+
 /** end flip card **/
-
-// .card {
-//   //   background-color: #f5d020;
-//   //   background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
-//   color: #fff;
-//   background: #808080;
-//   margin: 40px auto 40px auto;
-//   width: 300px;
-//   height: 400px;
-//   perspective: 1000px;
-//   position: relative;
-// }
-
-/* front of card */
-// .card .front {
-//   transform: rotateX(180deg);
-//   transition: all ease-in 0.02s;
-//   position: absolute;
-// }
-// .flip .front {
-//   transform: rotateY(0deg);
-//   transition-delay: 0.02s;
-// }
-
-/* back of card */
-// .card .back {
-//   transition: all ease-in 1s;
-//   transition-delay: 0.02s;
-// }
-// .flip .back {
-//   transform: rotateX(180deg);
-//   transition-delay: 0s;
-// }

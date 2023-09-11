@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ShowCarousel from "../Components/ShowCarousel";
 import Navbar from "../Components/Navbar/Navbar";
 import DisplayGrid from "../Components/DisplayGrid/DisplayGrid";
 import AOS from "aos";
@@ -39,8 +38,6 @@ const TitleWrapper = styled.div`
   display: grid;
   row-gap: 10px;
 `;
-
-//const X = <FontAwesomeIcon icon={faTwitter} />;
 
 function Home() {
   const { getCarousel } = useContentfulAPI();
