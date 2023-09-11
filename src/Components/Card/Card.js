@@ -1,15 +1,22 @@
+import React, { useState } from "react";
 import "./Card.scss";
+import data from "../../data";
 
 export default function SingleCard() {
-  let flipped = false;
   const card = "";
-  const handleChoice = (card) => {};
+  const [flipped, setFlipped] = useState(false);
+  const [choiceOne, setChoiceOne] = useState(null);
+  const [choiceTwo, setChoiceTwo] = useState(null);
+
+  const handleChoice = (card) => {
+    choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
+  };
   const handleClick = () => {
     handleChoice(card);
   };
 
   return (
-    <div className="card">
+    <div className="card" onClick={handleClick}>
       <div className={flipped ? "flipped" : ""}>
         <div className="front">
           <h3>Front End developer</h3>
@@ -19,7 +26,7 @@ export default function SingleCard() {
           </p>
           <p className="more">Click To See More</p>
         </div>
-        <div className="back" onClick={handleClick}>
+        <div className="back">
           <h3>Back End Developer</h3>
           <p>
             I am a full-stack developer skilled in the use of Node, MongoDB, and
