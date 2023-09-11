@@ -159,8 +159,8 @@ function DisplayGrid() {
             </div>
           </div>
         </div> */}
-        //card, handleChoice, flipped
-        <Card />
+        {/* //card, handleChoice, flipped */}
+        {/* <Card /> */}
         <div className="display-container">
           {tempArray.map((card, index) => (
             <div key={card.id} className="display-card animateCard">
