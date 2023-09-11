@@ -4,7 +4,6 @@ import Carousel from "../Carousel/Carousel";
 import Card from "../Card/Card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import useContentfulAPI from "../../Utils/useContentfulAPI";
 import data from "../../data";
 
 function DisplayGrid() {
