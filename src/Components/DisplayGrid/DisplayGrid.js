@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./DisplayGrid.scss";
 import Carousel from "../Carousel/Carousel";
-import Card from "../Components/Card/Card";
+import Card from "../../Components/Card/Card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { listCards } from "../../Actions/CardActions";
