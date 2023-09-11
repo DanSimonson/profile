@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./DisplayGrid.scss";
 import Carousel from "../Carousel/Carousel";
-import Card from "../../Components/Card/Card";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { listCards } from "../../Actions/CardActions";
@@ -121,14 +121,14 @@ function DisplayGrid() {
             years of experience to help my clients achieve their goals.
           </p>
         </div>
-        <div className="card-grid">
+        {/* <div className="card-grid">
           <div className="card">
             <div>
               <div className="front">Hello Front</div>
               <div className="back">Hello Back</div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div className="card_outer">
           <div className="card__inner">
             <div className="card__face card__face--front">
@@ -159,6 +159,8 @@ function DisplayGrid() {
             </div>
           </div>
         </div> */}
+        //card, handleChoice, flipped
+        <Card />
         <div className="display-container">
           {tempArray.map((card, index) => (
             <div key={card.id} className="display-card animateCard">
@@ -170,7 +172,6 @@ function DisplayGrid() {
           ))}
           )
         </div>
-
         <div className="carouselSection">
           <div className="background-animation-container">
             <div className="transitionToCarousel">Some Personal Projects</div>
