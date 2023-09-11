@@ -18,60 +18,16 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import useContentfulAPI from "../Utils/useContentfulAPI";
-import styled from "styled-components";
+//import useContentfulAPI from "../Utils/useContentfulAPI";
+//import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const Wrapper = styled.div`
-  font-family: "Roboto";
-  margin: 40px;
-  display: grid;
-  row-gap: 20px;
-  justify-content: center;
-`;
-
-const TitleWrapper = styled.div`
-  * {
-    margin: 0;
-  }
-
-  display: grid;
-  row-gap: 10px;
-`;
-
 function Home() {
-  const { getCarousel } = useContentfulAPI();
-  let [carousel, setCarousel] = useState([]);
   let navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 2000 });
-    fetchCarousel();
   }, []);
 
-  const fetchCarousel = async () => {
-    let carouselList = [];
-    const carouselItems = await getCarousel();
-
-    for (let i = 0; i <= carouselItems.items.length - 1; i++) {
-      if (carouselItems.items[i].fields.index === 1) {
-        if (carouselList.length < carouselItems.items.length) {
-          carouselList.push(carouselItems.items[i].fields);
-        }
-      } else if (carouselItems.items[i].fields.index === 2) {
-        if (carouselList.length < carouselItems.items.length) {
-          carouselList.push(carouselItems.items[i].fields);
-        }
-      }
-      getUniqueCarousel(carouselList, carouselItems.items.length);
-    }
-  };
-
-  const getUniqueCarousel = (carouselData, length) => {
-    if (carouselData.length < length) {
-      setCarousel(carouselData);
-      return carouselData;
-    }
-  };
   const goToRoute = () => {
     navigate("/resume");
   };
