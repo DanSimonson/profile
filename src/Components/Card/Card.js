@@ -1,27 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Card.scss";
 import data from "../../data";
 
 export default function SingleCard() {
-  const card = "";
-  const [flipped, setFlipped] = useState(false);
+  const [card, setCard] = useState(null);
+  const [flip, setFlip] = useState(false);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
 
-  const handleChoice = (card) => {
-    choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
-    if (card === choiceOne || card === choiceTwo) {
-      console.log("choiceOne ==== :", choiceOne);
-      console.log("choiceTwo ==== :", choiceTwo);
-    }
+  useEffect(() => {}, []);
+
+  const handleChoice = (flip) => {
+    console.log("flip: ", flip);
+    // choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
+    // if (card === choiceOne || card === choiceTwo) {
+    //   console.log("choiceOne ==== :", choiceOne);
+    //   console.log("choiceTwo ==== :", choiceTwo);
+    // }
   };
   const handleClick = () => {
-    handleChoice(card);
+    setFlip(!flip);
+    handleChoice(flip);
   };
 
   return (
     <div className="card" onClick={handleClick}>
-      <div className={flipped ? "flipped" : ""}>
+      <div className={flip ? "flip" : ""}>
         <div className="front">
           <h3>Front End developer</h3>
           <p>

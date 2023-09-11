@@ -17,7 +17,7 @@ function DisplayGrid() {
   //console.log("data.projects: ", data.projects);
   //let tempItem = data.projects.splice(3, 4);
   let tempArray = data.cards.filter((card) => card.title !== "Next Egg");
-  console.log("tempArray: ", tempArray);
+  //console.log("tempArray: ", tempArray);
   //cardArray = [...tempArray, ...tempItem];
   //console.log("cardArray: ", cardArray);
   //console.log("tempItem: ", tempItem);
@@ -54,7 +54,7 @@ function DisplayGrid() {
   const fetchCarousel = async () => {
     let carouselList = [];
     const carouselItems = await getCarousel();
-    console.log("carouselItems.items: ", carouselItems.items);
+    //console.log("carouselItems.items: ", carouselItems.items);
     for (let i = 0; i <= carouselItems.items.length - 1; i++) {
       if (carouselItems.items[i].fields.index === 1) {
         if (carouselList.length < carouselItems.items.length) {
