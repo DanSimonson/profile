@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./DisplayGrid.scss";
 import Carousel from "../Carousel/Carousel";
-
+import Card from "../Card/Card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { listCards } from "../../Actions/CardActions";
@@ -160,7 +160,7 @@ function DisplayGrid() {
           </div>
         </div> */}
         {/* //card, handleChoice, flipped */}
-        {/* <Card /> */}
+        <Card />
         <div className="display-container">
           {tempArray.map((card, index) => (
             <div key={card.id} className="display-card animateCard">
