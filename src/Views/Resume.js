@@ -19,9 +19,8 @@ function Resume() {
           <ul>
             <li>
               <p>
-                Over 20 years of IT experience which includes 5+ years of
-                extensive experience as a Software Engineer using CSS,
-                JavaScript, Vue and React.
+                Over 20 years of IT experience which includes 6+ years of
+                extensive experience as a Software Engineer.
               </p>
             </li>
             <li>
@@ -151,7 +150,7 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Cognizant (clients Bayer, Macys)</p>
+            <p>Cognizant (clients Macys, Bayer)</p>
             <p>February 2020 to September 2020</p>
           </div>
           <ul>
@@ -160,9 +159,11 @@ function Resume() {
             </li>
             <li>
               <p>
-                Designed and coded new features for using HTML, CSS, React,
-                Redux, Thunk and JavaScript, creating a sales dashboard allowing
-                Monsanto to organize and track their farm business partners.
+                Help create software that tracks logistical shipping data for
+                products sent to Macy's Backstage stores. Designed and coded new
+                features using HTML, CSS, React, Redux, Thunk and JavaScript,
+                creating a sales dashboard allowing Monsanto to organize and
+                track their farm business partners.
               </p>
             </li>
           </ul>
