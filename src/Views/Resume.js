@@ -66,12 +66,12 @@ function Resume() {
             <p>Work History</p>
           </div>
           <div className="work-title">
-            <p>TCS(client Verizon), Austin, TX</p>
+            <p>TCS (client Verizon)</p>
             <p>February 2023 to August 2023</p>
           </div>
           <ul>
             <li>
-              <p>Software Engineer, Austin, Texas</p>
+              <p>Software Engineer, Austin, TX</p>
             </li>
             <li>
               <p>
@@ -83,12 +83,12 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Infosys(client American Family Insurance), Austin, TX</p>
+            <p>Infosys (client American Family Insurance)</p>
             <p>October 2022 to January 2023</p>
           </div>
           <ul>
             <li>
-              <p>Software Engineer, Austin, Texas</p>
+              <p>Software Engineer, Austin, TX</p>
             </li>
             <li>
               <p>
@@ -98,7 +98,7 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>TCS(client: Allstate Insurance), Austin, TX</p>
+            <p>Infosys (client: Allstate Insurance)</p>
             <p>February 2022 to September 2022</p>
           </div>
           <ul>
@@ -113,18 +113,17 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>TCS (client: Safeway/Albertsons, Austin, TX</p>
-            <p>Feb 2021 to </p>
+            <p>TCS (client: Safeway/Albertsons</p>
+            <p>February 2021 to January 2022 </p>
           </div>
           <ul>
             <li>
-              <p>Software Engineer</p>
+              <p>Software Engineer, Austin, TX</p>
             </li>
             <li>
               <p>
                 Developing new user-facing features using React.js, JavaScript,
-                Redux, Node.js, CSS. Translated designs and wireframes into
-                high-quality code. Building reusable components and front-end
+                Redux, Node.js, CSS. Built reusable components and front-end
                 libraries for future use. Optimized components for maximum
                 performance. Utilized Redux, Thunk, JWT Authentication.
               </p>
@@ -132,12 +131,12 @@ function Resume() {
           </ul>
 
           <div className="work-title">
-            <p>Matrix(client AuctionOS), Atlanta, GA</p>
-            <p>Sep 2020 to Dec 2020</p>
+            <p>Matrix (client AuctionOS)</p>
+            <p>October 2020 to Dec 2020</p>
           </div>
           <ul>
             <li>
-              <p>Full-Stack Developer</p>
+              <p>Full-Stack Developer, Atlanta, GA</p>
             </li>
             <li>
               <p>
@@ -152,34 +151,28 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Cognizant(clients Bayer, Macys), Atlanta, GA</p>
-            <p>Feb 2020 to Sep 2020</p>
+            <p>Cognizant (clients Bayer, Macys)</p>
+            <p>February 2020 to September 2020</p>
           </div>
           <ul>
             <li>
-              <p>Front-End Developer</p>
+              <p>Front-End Developer, Atlanta, GA</p>
             </li>
             <li>
               <p>
-                Designed, coded and maintained new features for using HTML, CSS,
-                React, Redux, Thunk and JavaScript. Created functional
-                applications that feature user-friendly design and clear
-                navigation for software. Worked in teams using agile development
-                with SCRUM methodology to successfully deliver features each
-                sprint. Assisted in the development of applications and features
-                that will be put on the website and in internal functions as
-                well Implementing user interface components using React.js
-                concepts and workflows.
+                Designed and coded new features for using HTML, CSS, React,
+                Redux, Thunk and JavaScript, creating a sales dashboard allowing
+                Monsanto to organize and track their farm business partners.
               </p>
             </li>
           </ul>
           <div className="work-title">
-            <p>Charter Global(client Routematch By Uber), Atlanta, GA</p>
-            <p> Aug 2019 to Feb 2020</p>
+            <p>Charter Global (client Routematch By Uber)</p>
+            <p> August 2019 to January 2020</p>
           </div>
           <ul>
             <li>
-              <p>Full-Stack Developer</p>
+              <p>Full-Stack Developer, Atlanta, GA</p>
             </li>
             <li>
               <p>
@@ -196,13 +189,13 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Vasavah, Manila, Philippines</p>
+            <p>Vasavah</p>
             <p>Nov 2018 to June 2019</p>
           </div>
           <ul>
             <li>
               <li>
-                <p>Front-End Developer</p>
+                <p>Front-End Developer, Manila, Philippines</p>
               </li>
               <p>
                 Used React framework to create a React-draft-wysiwyg with a
@@ -216,12 +209,12 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>mariposaweb.net, Philippines</p>
-            <p>Sep 2016 to Nov 2018</p>
+            <p>mariposaweb.net</p>
+            <p>September 2016 to September 2018</p>
           </div>
           <ul>
             <li>
-              <p>Freelance Web Developer</p>
+              <p>Freelance Web Developer, Philippines</p>
             </li>
             <li>
               <p>
@@ -247,8 +240,8 @@ function Resume() {
             </li> */}
             <li>
               <p>
-                Bachelor of Science: Computer Science, Saint Martin’s
-                University, Olympia Washington, 2004
+                Bachelor of Science: Computer Science, Saint Martin’s University
+                (cum laude/3.65 GPA), Olympia, Washington, 2004
               </p>
             </li>
             <li>
