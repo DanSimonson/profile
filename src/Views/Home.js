@@ -18,8 +18,6 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-//import useContentfulAPI from "../Utils/useContentfulAPI";
-//import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
