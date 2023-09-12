@@ -1,5 +1,4 @@
 import React from "react";
-
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import Home from "./Views/Home";
 import Resume from "./Views/Resume";
