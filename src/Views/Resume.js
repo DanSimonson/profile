@@ -65,9 +65,9 @@ function Resume() {
           <div className="subTitleWork">
             <p>Work History</p>
           </div>
-          {/*<div className="work-title">
-            <p>Infosys(client Allstate, AmFam), Austin, TX</p>
-            <p>Nov 2021 to present</p>
+          <div className="work-title">
+            <p>TCS(client Verizon), Austin, TX</p>
+            <p>February 2023 to August 2023</p>
           </div>
           <ul>
             <li>
@@ -75,16 +75,46 @@ function Resume() {
             </li>
             <li>
               <p>
-                Deliver high quality code. Lead validation for all types of
-                testing and support activities related to implementation.
-                Interface with key stakeholders and apply technical proficiency
-                across different stages of the Software Development Life Cycle.
+                Interfaced with key stakeholders and applied technical
+                proficiency across different stages of the Software Development
+                Life Cycle to Delivery high quality code, increasing revenue
+                with new promotions for smart watches.
               </p>
             </li>
-            </ul>*/}
-          {/*<div className="work-title">
-            <p>Safeway, Austin, TX</p>
-            <p>Feb 2021 to Present</p>
+          </ul>
+          <div className="work-title">
+            <p>Infosys(client American Family Insurance), Austin, TX</p>
+            <p>October 2022 to January 2023</p>
+          </div>
+          <ul>
+            <li>
+              <p>Software Engineer, Austin, Texas</p>
+            </li>
+            <li>
+              <p>
+                Deliver high quality code to deliver a new motorcycle insurance
+                page, boosting customer engagement
+              </p>
+            </li>
+          </ul>
+          <div className="work-title">
+            <p>TCS(client: Allstate Insurance), Austin, TX</p>
+            <p>February 2022 to September 2022</p>
+          </div>
+          <ul>
+            <li>
+              <p>Software Engineer, Austin, Texas</p>
+            </li>
+            <li>
+              <p>
+                Helped create a micro-frontend adding increased ease of use and
+                adaptability to change for future insurance pages.
+              </p>
+            </li>
+          </ul>
+          <div className="work-title">
+            <p>TCS (client: Safeway/Albertsons, Austin, TX</p>
+            <p>Feb 2021 to </p>
           </div>
           <ul>
             <li>
@@ -99,10 +129,11 @@ function Resume() {
                 performance. Utilized Redux, Thunk, JWT Authentication.
               </p>
             </li>
-          </ul>*/}
+          </ul>
+
           <div className="work-title">
             <p>Matrix(client AuctionOS), Atlanta, GA</p>
-            <p>Sep 2020 to Present</p>
+            <p>Sep 2020 to Dec 2020</p>
           </div>
           <ul>
             <li>
@@ -121,7 +152,7 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Cognizant(client Bayer, Macys), Atlanta, GA</p>
+            <p>Cognizant(clients Bayer, Macys), Atlanta, GA</p>
             <p>Feb 2020 to Sep 2020</p>
           </div>
           <ul>
