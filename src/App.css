@@ -1,1 +1,28 @@
-
+.filler {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  cursor: pointer;
+}
+.filler:hover {
+  animation: tada;
+  animation-duration: 2s;
+}
+.fillerSpan:hover {
+  animation: jello;
+  animation-duration: 2s;
+}
+.fillerMain:hover {
+  animation: tada;
+  animation-duration: 2s;
+}
+.transition {
+  background-color: #e8f5e9; /*#eceff1;*/
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
