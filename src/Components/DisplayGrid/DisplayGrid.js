@@ -28,8 +28,8 @@ function DisplayGrid() {
 
         <div className="display-container">
           {tempArray.map((card, index) => (
-            <div key={card.id} className="display-card animateCard">
-              <div className="display-content">
+            <div className="display-card animateCard">
+              <div key={card.id} className="display-content">
                 <h3>{card.title}</h3>
                 <p>{card.content}</p>
               </div>
