@@ -324,6 +324,8 @@ a.displaygrid_navlink:hover {
 .transitionToCarousel {
   background-color: #e8f5e9; /*#eceff1;*/
   height: 200px;
+  width: 100vw;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,24 +343,30 @@ a.displaygrid_navlink:hover {
   width: 98vw;
   margin: 0 auto;
 }
+
 /* end carousel section */
-@media (min-width: 320px) {
-  .transitionToCarousel {
-    width: 100vw;
+
+/** media queries **/
+
+@media (min-width: 360px) {
+  .bodyWrap {
+    margin-top: 1100px;
   }
 }
 @media (min-width: 375px) {
   .bodyWrap {
     margin-top: 950px;
   }
-  // .transitionToCarousel {
-  //   border: 5px solid red;
-  //   width: 100%;
-  // }
+  .accomplishments {
+    margin-top: 7rem;
+  }
 }
 @media (min-width: 425px) {
   .bodyWrap {
-    margin-top: 800px;
+    margin-top: 950px;
+  }
+  .accomplishments {
+    margin-top: 7rem;
   }
 }
 @media (min-width: 500px) {
