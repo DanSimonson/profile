@@ -10,7 +10,7 @@ export default function SingleCard() {
   };
 
   return (
-    <div className="centerMe">
+    <div className="hideMe">
       <ReactCardFlip
         isFlipped={flip}
         flipDirection="vertical"
