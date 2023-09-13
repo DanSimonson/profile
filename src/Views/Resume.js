@@ -76,8 +76,8 @@ function Resume() {
               <p>
                 Interfaced with key stakeholders and applied technical
                 proficiency across different stages of the Software Development
-                Life Cycle to Delivery high quality code, increasing revenue
-                with new promotions for smart watches.
+                Life Cycle, increasing revenue with new promotions for smart
+                watches.
               </p>
             </li>
           </ul>
@@ -91,8 +91,8 @@ function Resume() {
             </li>
             <li>
               <p>
-                Deliver high quality code to deliver a new motorcycle insurance
-                page, boosting customer engagement
+                Deliver high quality code for a new motorcycle insurance page,
+                boosting customer engagement
               </p>
             </li>
           </ul>
@@ -106,7 +106,7 @@ function Resume() {
             </li>
             <li>
               <p>
-                Helped create a micro-frontend adding increased ease of use and
+                Helped create a micro-frontend increasing ease of use and
                 adaptability to change for future insurance pages.
               </p>
             </li>
@@ -135,17 +135,16 @@ function Resume() {
           </div>
           <ul>
             <li>
-              <p>Full-Stack Developer, Atlanta, GA</p>
+              <p>Software Engineer, Atlanta, GA</p>
             </li>
             <li>
               <p>
                 Designed, coded and maintained new features for using HTML, CSS,
-                JavaScript, Vue. Full-Stack Development with MySQL and Node.js
+                JavaScript, Vue. Full-Stack Development with MySQL and Node.js.
                 Created functional applications that feature user-friendly
                 design and clear navigation for online car auction software.
                 Worked in small collaborative team to successfully deliver
-                features Assist in the development of applications and features
-                that will be put on the website.
+                features.
               </p>
             </li>
           </ul>
@@ -173,19 +172,15 @@ function Resume() {
           </div>
           <ul>
             <li>
-              <p>Full-Stack Developer, Atlanta, GA</p>
+              <p>Software Engineer, Atlanta, GA</p>
             </li>
             <li>
               <p>
-                Designed, coded and maintained rider portal using HTML, CSS,
-                Vue, JavaScript, Node.js, Authentication, Full-Stack
-                Development. Created functional applications that feature
-                user-friendly design and clear navigation for transportation
-                software. Worked in teams using agile development with SCRUM
-                methodology to successfully deliver features each sprint Assist
-                in the development of applications and features that will be put
-                on the website and in internal functions as well Implementing
-                user interface components using JavaScript and Vue.
+                Designed, coded and maintained rider portal. Created functional
+                applications that feature user-friendly design for
+                transportation software. Worked in teams using agile development
+                with SCRUM methodology to successfully implement user interface
+                components using JavaScript and Vue.
               </p>
             </li>
           </ul>
@@ -196,7 +191,7 @@ function Resume() {
           <ul>
             <li>
               <li>
-                <p>Front-End Developer, Manila, Philippines</p>
+                <p>Software Engineer, Manila, Philippines</p>
               </li>
               <p>
                 Used React framework to create a React-draft-wysiwyg with a
