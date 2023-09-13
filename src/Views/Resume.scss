@@ -91,3 +91,8 @@ li p:before {
 .bottom-spacer {
   margin-bottom: 100px;
 }
+@media (min-width: 375px) {
+  p.display-footer-company-motto {
+    display: none;
+  }
+}

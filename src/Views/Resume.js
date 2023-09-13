@@ -209,9 +209,9 @@ function Resume() {
               </p>
             </li>
           </ul>
-          <div className="work-title">
-            <p>mariposaweb.net</p>
-            <p>September 2016 to September 2018</p>
+          <div className="work-title" style={{ display: "flex" }}>
+            <p>mariposaweb</p>
+            <p>Sept 2016 to Sept 2018</p>
           </div>
           <ul>
             <li>
@@ -233,12 +233,6 @@ function Resume() {
             <p>Education</p>
           </div>
           <ul>
-            {/* <li>
-              <p>Free Code Camp, Front End Libraries Certificate, 2019 </p>
-            </li>
-            <li>
-              <p>Free Code Camp Front End Developer Certificate, 2018</p>
-            </li> */}
             <li>
               <p>
                 Bachelor of Science: Computer Science, Saint Martin’s University
