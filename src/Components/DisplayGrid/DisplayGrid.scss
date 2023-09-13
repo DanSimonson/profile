@@ -342,10 +342,19 @@ a.displaygrid_navlink:hover {
   margin: 0 auto;
 }
 /* end carousel section */
+@media (min-width: 320px) {
+  .transitionToCarousel {
+    width: 100vw;
+  }
+}
 @media (min-width: 375px) {
   .bodyWrap {
     margin-top: 950px;
   }
+  // .transitionToCarousel {
+  //   border: 5px solid red;
+  //   width: 100%;
+  // }
 }
 @media (min-width: 425px) {
   .bodyWrap {

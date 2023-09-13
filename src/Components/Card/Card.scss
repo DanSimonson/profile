@@ -33,9 +33,12 @@
 @media (max-width: 650px) {
   /* … */
   .hideMe {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
   }
+}
+@media (max-width: 385px) {
 }
