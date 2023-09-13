@@ -1,7 +1,5 @@
 import React from "react";
 import "./DisplayFooter.scss";
-//import "./Footer.scss";
-//import { NavLink } from "react-router-dom";
 
 const DisplayFooter = () => {
   return (
