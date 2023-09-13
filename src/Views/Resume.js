@@ -19,18 +19,18 @@ function Resume() {
           <ul>
             <li>
               <p>
-                Over 20 years of IT experience which includes 6+ years of
-                extensive experience as a Software Engineer.
+                Over 20 years of IT experience which includes 6+ years as a
+                Software Engineer.
               </p>
+            </li>
+            <li>
+              <p>Specializing in front-end development</p>
             </li>
             <li>
               <p>
-                Specializing in MERN stack development with MongoDB, Express,
-                Node and React
+                Extensive MERN stack development knowledge with MongoDB,
+                Express, Node and React
               </p>
-            </li>
-            <li>
-              <p>Experience unit testing with Jest and React Testing Library</p>
             </li>
           </ul>
           <div className="subTitleSkills">
