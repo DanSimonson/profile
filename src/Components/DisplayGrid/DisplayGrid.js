@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./DisplayGrid.scss";
 import Carousel from "../Carousel/Carousel";
 import Card from "../Card/Card";
@@ -28,8 +28,8 @@ function DisplayGrid() {
 
         <div className="display-container">
           {tempArray.map((card, index) => (
-            <div className="display-card animateCard">
-              <div key={card.id} className="display-content">
+            <div key={index} className="display-card animateCard">
+              <div className="display-content">
                 <h3>{card.title}</h3>
                 <p>{card.content}</p>
               </div>
