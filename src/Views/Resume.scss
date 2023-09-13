@@ -1,7 +1,5 @@
 .resumeContainer {
-  //border: 5px solid yellow;
   height: 100vh;
-  //background-color: #fff;
   color: #222;
   display: flex;
   justify-content: center;
@@ -9,15 +7,11 @@
   padding-top: 10%;
 }
 .resumeWrapper {
-  //border: 5px solid green;
   color: #222;
   width: 60%;
-  //height: 95%;
-
   background-color: whitesmoke;
   border-radius: 8px;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
-  //overflow: scroll;
 }
 
 .resumeTitle {
@@ -61,10 +55,6 @@ li p:before {
 }
 .subTitleSkills p {
   font-size: 4rem;
-}
-.resumeContainerTwo {
-  //height: 100vh; //1500px;
-  //background-color: #fff;
 }
 .subTitleWork {
   display: flex;
