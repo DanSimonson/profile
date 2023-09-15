@@ -248,7 +248,7 @@ function Resume() {
             </li>
           </ul>
           <div className="bottom-spacer"></div>
-          <DisplayFooter />
+          {/* <DisplayFooter /> */}
         </div>
       </div>
       <div className="resumeContainerTwo"></div>

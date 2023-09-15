@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "../Components/Navbar/Navbar";
 import DisplayGrid from "../Components/DisplayGrid/DisplayGrid";
+import DisplayFooter from "../Components/DisplayFooter/DisplayFooter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
@@ -149,6 +150,7 @@ function Home() {
         </div>
         <DisplayGrid />
       </div>
+      <DisplayFooter />
     </>
   );
 }

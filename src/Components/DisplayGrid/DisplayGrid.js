@@ -23,16 +23,8 @@ function DisplayGrid() {
             years of experience to help my clients achieve their goals.
           </p>
         </div>
-        <div
-          style={{
-            //border: "5px solid red",
-            width: "100%",
-            height: "100%",
-            //visibility: "hidden",
-          }}
-        >
-          <Card />
-        </div>
+
+        <Card />
 
         <div className="display-container">
           {tempArray.map((card, index) => (

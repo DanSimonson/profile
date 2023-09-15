@@ -14,7 +14,7 @@
   padding: 0;
 }
 .bodyWrap {
-  background: darkblue; //#f1f1f1;
+  background: darkblue;
   height: 100%;
 }
 .showCard {
@@ -351,7 +351,7 @@ a.displaygrid_navlink:hover {
 /* end carousel section */
 
 /** media queries **/
-
+/** everything under **/
 @media (min-width: 360px) {
   .bodyWrap {
     margin-top: 1100px;
