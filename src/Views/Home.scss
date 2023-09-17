@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
 /* 16px x 62.5 = 10px = 1rem*/
 html {
   font-size: 62.5%;
@@ -7,7 +8,8 @@ body {
   margin: 0;
   height: 100vh;
   font-size: 1rem;
-  font-family: Helvetica, Arial, sans-serif;
+  //font-family: Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: darkblue;
@@ -23,6 +25,10 @@ body {
   color: #fff;
   font-size: 2rem;
   padding: 1rem;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  //text-align: center;
 }
 
 #parent {
@@ -151,6 +157,72 @@ body {
 }
 .spanClass {
   margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    // -webkit-transform: rotate(0deg);
+    // -o-transform: rotate(0deg);
+    // transform: rotate(0deg);
+  }
+  to {
+    // -webkit-transform: rotate(360deg);
+    // -o-transform: rotate(360deg);
+    // transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  0% {
+    transform: rotateX(0deg);
+    // background-color: red;
+    // left: 0px;
+    // top: 0px;
+  }
+  25% {
+    transform: rotateX(25deg);
+    // background-color: yellow;
+    // left: 200px;
+    // top: 0px;
+  }
+  50% {
+    transform: rotateX(50deg);
+    // background-color: blue;
+    // left: 200px;
+    // top: 200px;
+  }
+  75% {
+    transform: rotateY(75deg);
+    // background-color: green;
+    // left: 0px;
+    // top: 200px;
+  }
+  100% {
+    transform: rotateX(100deg);
+    // background-color: red;
+    // left: 0px;
+    // top: 0px;
+  }
+  // from {
+  //   // -ms-transform: rotate(0deg);
+  //   // -moz-transform: rotate(0deg);
+  //   // -webkit-transform: rotate(0deg);
+  //   // -o-transform: rotate(0deg);
+  //   transform: rotateX(0deg);
+  // }
+  // to {
+  //   // -ms-transform: rotate(360deg);
+  //   // -moz-transform: rotate(360deg);
+  //   // -webkit-transform: rotate(360deg);
+  //   // -o-transform: rotate(360deg);
+  //   transform: rotateX(360deg);
+  // }
+}
+.rotating {
+  // -webkit-animation: rotating 2s linear infinite;
+  // -moz-animation: rotating 2s linear infinite;
+  // -ms-animation: rotating 2s linear infinite;
+  // -o-animation: rotating 2s linear infinite;
+  animation: rotating 10s linear infinite;
 }
 
 /*media queries*/

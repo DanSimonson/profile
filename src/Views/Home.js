@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "../Components/Navbar/Navbar";
 import DisplayGrid from "../Components/DisplayGrid/DisplayGrid";
@@ -35,7 +36,9 @@ function Home() {
     <>
       <Navbar />
       <div id="parent">
-        <div className="name">mariposaweb.net</div>
+        <div className="name">
+          <h1 className="rotating">mariposaweb.net</h1>
+        </div>
         <div id="header" className="iconSize">
           <a href="https://github.com/DanSimonson/" target="blank">
             <div className="boxes bounceMeOne">
