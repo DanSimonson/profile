@@ -3,7 +3,6 @@ import "./DisplayFooter.scss";
 import { NavLink } from "react-router-dom";
 
 const DisplayFooter = () => {
-  let linkBlog = "heuristic-neumann-ad864a.netlify.app";
   return (
     <>
       <footer className="display-footer-basic-centered">
@@ -14,6 +13,7 @@ const DisplayFooter = () => {
           <a
             href="https://heuristic-neumann-ad864a.netlify.app"
             target="_blank"
+            className="flip"
           >
             My Blog
           </a>
