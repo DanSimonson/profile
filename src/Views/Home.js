@@ -151,6 +151,13 @@ function Home() {
             </p>
           </div>
         </div>
+        <div
+          style={{
+            height: "30rem",
+            width: "100vw",
+            backgroundColor: "transparent",
+          }}
+        ></div>
         <DisplayGrid />
       </div>
       <DisplayFooter />

@@ -44,6 +44,13 @@ function DisplayGrid() {
           </div>
         </div>
       </div>
+      <div
+        style={{
+          height: "7rem",
+          width: "100vw",
+          backgroundColor: "transparent",
+        }}
+      ></div>
     </React.Fragment>
   );
 }

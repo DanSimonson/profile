@@ -12,9 +12,8 @@ const DisplayFooter = () => {
         </p>
         <p className="display-footer-links">
           <a
-            href="https://blog.mariposaweb.net"
+            href="https://heuristic-neumann-ad864a.netlify.app"
             target="_blank"
-            className="flip"
           >
             My Blog
           </a>
