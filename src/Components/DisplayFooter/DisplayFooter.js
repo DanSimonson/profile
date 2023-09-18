@@ -11,7 +11,11 @@ const DisplayFooter = () => {
           Contact: dansimonson@mariposaweb.net
         </p>
         <p className="display-footer-links">
-          <a href="https://blog.mariposaweb.net" target="_blank">
+          <a
+            href="https://blog.mariposaweb.net"
+            target="_blank"
+            className="flip"
+          >
             My Blog
           </a>
         </p>

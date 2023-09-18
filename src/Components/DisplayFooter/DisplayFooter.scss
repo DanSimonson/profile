@@ -45,6 +45,33 @@
   opacity: 1;
 }
 
+/** vertical flip **/
+.flip {
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.flip:hover {
+  animation: flip 3s linear infinite;
+}
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+    color: #fff;
+  }
+  50% {
+    transform: rotateX(180deg);
+    color: whitesmoke;
+  }
+  100% {
+    transform: rotateX(360deg);
+    color: lightblue;
+  }
+}
+/** end vertical flip **/
+
 /* media queries */
 @media (max-width: 767px) {
   .display-footer-basic-centered {
