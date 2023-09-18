@@ -11,10 +11,7 @@ const DisplayFooter = () => {
           Contact: dansimonson@mariposaweb.net
         </p>
         <p className="display-footer-links">
-          <a
-            href="https://heuristic-neumann-ad864a.netlify.app"
-            target="_blank"
-          >
+          <a href="https://blog.mariposaweb.net" target="_blank">
             My Blog
           </a>
         </p>
