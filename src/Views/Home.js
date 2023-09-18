@@ -37,7 +37,7 @@ function Home() {
       <Navbar />
       <div id="parent">
         <div className="name">
-          <h1 className="rotating">mariposaweb.net</h1>
+          <h1 className="flip">mariposaweb.net</h1>
         </div>
         <div id="header" className="iconSize">
           <a href="https://github.com/DanSimonson/" target="blank">
