@@ -15,6 +15,15 @@ function DisplayGrid() {
         <div className="heroImage">
           <div className="bg-image"></div>
         </div>
+        <div
+          style={{
+            height: "1rem",
+            width: "100vw",
+            backgroundColor: "transparent",
+            padding: "3rem 0",
+            marginBottom: "1rem",
+          }}
+        />
         <div className="accomplishments">
           <h1>Contracting </h1>
           <h1> Accomplishments</h1>
@@ -23,6 +32,15 @@ function DisplayGrid() {
             years of experience to help my clients achieve their goals.
           </p>
         </div>
+        <div
+          style={{
+            height: "1rem",
+            width: "100vw",
+            backgroundColor: "transparent",
+            padding: "3rem 0",
+            marginBottom: "10rem",
+          }}
+        />
 
         <Card />
 
