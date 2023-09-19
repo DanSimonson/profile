@@ -8,7 +8,6 @@ body {
   margin: 0;
   height: 100vh;
   font-size: 1rem;
-  //font-family: Helvetica, Arial, sans-serif;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,7 +21,6 @@ body {
   position: absolute;
   top: 20px;
   left: 5px;
-  //color: #fff;
   font-size: 2rem;
   padding: 1rem;
   width: 100px;
@@ -116,7 +114,6 @@ body {
   animation-duration: 2s;
 }
 .transition {
-  //display: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,17 +342,7 @@ p {
 }
 
 /**everything over*/
-@media (min-width: 425px) {
-  .transition {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // background-color: #e8f5e9;
-    // height: 200px;
-    // width: 100vw;
-    // font-size: 4rem;
-  }
-}
+
 @media (min-width: 767px) {
   .container {
     height: 60vh;
@@ -424,6 +411,4 @@ p {
   .wrapper {
     margin-top: 5rem;
   }
-}
-@media (min-width: 1028px) and (orientation: landscape) {
 }
