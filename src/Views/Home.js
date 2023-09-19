@@ -50,13 +50,10 @@ function Home() {
                 <div class="content-wrap">
                   <h1>Welcome to Mariposaweb</h1>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Adipisci eum error earum soluta voluptatum nisi laboriosam
-                    eos saepe asperiores dolorum.
+                    A full service Developer focused on providing beautiful User
+                    Interfaces and optimized, stable API Creation and
+                    Consumption.
                   </p>
-                  <a href="#section-b" class="btn">
-                    Read More
-                  </a>
                 </div>
               </header>
 
@@ -66,12 +63,10 @@ function Home() {
                     <h2 class="content-title">Web & Application Development</h2>
                     <div class="content-text">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Saepe sint eligendi possimus? Unde officiis magnam
-                        laborum ipsa distinctio odio, vero dolores dicta aliquam
-                        aperiam repellendus. Perferendis officiis deserunt velit
-                        voluptas nobis sequi animi totam, accusantium, ex eius
-                        quia, natus quo?
+                        I have spent several years boosting traffic, add
+                        immersive content, increase engagement with beautiful
+                        User Interfaces and optimized, stable API creation and
+                        consumption.
                       </p>
                     </div>
                   </div>
@@ -85,11 +80,12 @@ function Home() {
                           alt=""
                         />
                         <div class="card-content">
-                          <h3 class="card-title">Web Development</h3>
+                          <h3 class="card-title">Front-End Development</h3>
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nostrum culpa neque quo eum et quasi velit
-                            voluptatum cum maiores exercitationem.
+                            I enjoy crafting polished user interactions that
+                            surprise and delight users using primarly JavaScript
+                            framework React but I also have experienc with Vue
+                            and Angular.
                           </p>
                         </div>
                       </div>
@@ -101,11 +97,12 @@ function Home() {
                           alt=""
                         />
                         <div class="card-content">
-                          <h3 class="card-title">Mobile Applications</h3>
+                          <h3 class="card-title">Back-End Developer</h3>
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nostrum culpa neque quo eum et quasi velit
-                            voluptatum cum maiores exercitationem.
+                            I focus on optimized, stable API creation and
+                            consumption with Node, MongoDB, Mongoose, MySql, and
+                            headless cms's. I have provided a number of
+                            successful solutions.
                           </p>
                         </div>
                       </div>
@@ -117,11 +114,12 @@ function Home() {
                           alt=""
                         />
                         <div class="card-content">
-                          <h3 class="card-title">Tech Marketing</h3>
+                          <h3 class="card-title">Software Engineer</h3>
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nostrum culpa neque quo eum et quasi velit
-                            voluptatum cum maiores exercitationem.
+                            I have worked at all stages of the system
+                            development life cycle. From designing to coding to
+                            testing. I can provide full-spectrum knowledge when
+                            producing web applications.
                           </p>
                         </div>
                       </div>
@@ -131,16 +129,15 @@ function Home() {
                 <section id="section-c" class="grid">
                   <div class="content-wrap">
                     <h2 class="content-title">
-                      We handle all of your digital needs
+                      We handle all of your digital tech marketing needs
                     </h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime nam rerum vel earum error fugiat cupiditate, dolore
-                      eius! Minus, explicabo.
+                      I spent years increasing user engagement with immersive
+                      content.
                     </p>
                   </div>
                 </section>
-                <section id="section-d" class="grid">
+                {/* <section id="section-d" class="grid">
                   <div class="box">
                     <h2 class="content-title">Contact Us</h2>
                     <p>
@@ -160,7 +157,7 @@ function Home() {
                       temporibus quo?
                     </p>
                   </div>
-                </section>
+                </section> */}
               </main>
             </>
           ) : (
