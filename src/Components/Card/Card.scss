@@ -30,15 +30,31 @@
 /** end flip card **/
 
 /** media queries **/
-// @media (max-width: 650px) {
-//   /* … */
-//   .hideMe {
-//     display: none;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//   }
-// }
+@media (max-width: 725px) {
+  /* … */
+  // .hideMe {
+  //   display: none;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   width: 700px;
+  //   height: 650px;
+  //   height: 300px;
+  //   width: 400px;
+  // }
+
+  .card__body {
+    padding: 120px 60px 40px 60px;
+    height: 550px;
+    width: 550px;
+  }
+  .card__body h3 {
+    font-size: 26px;
+  }
+  .card__body p {
+    font-size: 24px;
+  }
+}
 // @media (max-width: 385px) {
 // }
