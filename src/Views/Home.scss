@@ -246,11 +246,14 @@ p {
   opacity: 0.4;
 }
 
-#showcase h1 {
+#showcase .content-wrap h1 {
   padding-top: 100px;
   padding-bottom: 0;
+  font-size: 3rem;
 }
-
+#showcase .content-wrap p {
+  font-size: 2rem;
+}
 #showcase .content-wrap,
 #section-a .content-wrap {
   padding: 0 1.5em;
