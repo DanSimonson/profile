@@ -137,27 +137,6 @@ function Home() {
                     </p>
                   </div>
                 </section>
-                {/* <section id="section-d" class="grid">
-                  <div class="box">
-                    <h2 class="content-title">Contact Us</h2>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Eum, suscipit. Rerum ducimus a quod, ut et voluptas
-                      obcaecati unde fuga.
-                    </p>
-                    <p>contact@acmewebsolutions.test</p>
-                  </div>
-                  <div class="box">
-                    <h2 class="content-title">About Our Company</h2>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Distinctio earum porro deserunt, deleniti, quae facere
-                      repudiandae, officiis est exercitationem nobis iusto
-                      doloremque! Soluta excepturi in aut suscipit amet
-                      temporibus quo?
-                    </p>
-                  </div>
-                </section> */}
               </main>
             </>
           ) : (
@@ -290,7 +269,7 @@ function Home() {
                   style={{
                     height: "30rem",
                     width: "100vw",
-                    backgroundColor: "transparent",
+                    backgroundColor: "whitesmoke",
                   }}
                 ></div>
                 <DisplayGrid />

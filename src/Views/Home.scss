@@ -11,8 +11,8 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: darkblue;
-  color: #fff;
+  background-color: whitesmoke; // #fecd45; //whitesmoke;
+  color: darkslategrey;
 }
 #root {
   height: 100%;
@@ -48,7 +48,7 @@ body {
   font-size: 3rem;
 }
 .stayWhite {
-  color: white;
+  color: darkslategray;
 }
 .bounceMeOne:hover {
   animation: rubberBand;
@@ -91,7 +91,7 @@ body {
 /* items */
 .wrapper {
   margin-top: 1.5rem;
-  color: #222;
+  color: darkslategray; //#222;
 }
 .filler {
   height: 200px;
@@ -117,17 +117,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e8f5e9;
+  background-color: #2568fb;
   height: 200px;
   width: 100vw;
   font-size: 4rem;
 }
 
 .about {
-  color: #fff;
+  color: darkslategrey;
   font-size: 3rem;
   padding: 1rem;
-  margin-top: 4rem; /*1rem*/
+  margin-top: 4rem;
 }
 .container {
   top: 37%;
@@ -168,7 +168,7 @@ body {
   font-size: 30px;
   padding: 20px;
   font-weight: bold;
-  color: #fff;
+  color: darkslategrey; //#fff;
   cursor: pointer;
 }
 .flip:hover {
@@ -177,15 +177,15 @@ body {
 @keyframes flip {
   0% {
     transform: rotateX(0deg);
-    color: #fff;
+    color: darkslategrey;
   }
   50% {
     transform: rotateX(180deg);
-    color: whitesmoke;
+    color: #999;
   }
   100% {
     transform: rotateX(360deg);
-    color: lightblue;
+    color: darkslategrey;
   }
 }
 /** end vertical flip **/

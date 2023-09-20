@@ -14,7 +14,7 @@
   padding: 0;
 }
 .bodyWrap {
-  background: darkblue;
+  background: whitesmoke; //#e1d9d1; //#fecd45; //#2568fb; //#e8f5e9; //whitesmoke; //darkblue;
   height: 100%;
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
-  color: white;
+  color: darkslategrey; //white;
   height: 200px;
   font-size: 2rem;
 }
@@ -54,10 +54,10 @@
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-row-gap: 40px;
   overflow: hidden;
-  background-color: darkblue;
+  background-color: whitesmoke; //#e1d9d1; //#fecd45; //#2568fb; //#e8f5e9; //whitesmoke; //darkblue;
   border-radius: 1rem;
   position: relative;
-  margin: 2rem 0.5rem 2rem 0.5rem;
+  margin: 2rem 0rem 0rem 0rem;
   padding: 0.5rem;
 }
 .animateCard:hover {
@@ -186,59 +186,59 @@
 }
 /** end flip card **/
 /** navbar **/
-.displaygrid_navbar {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #8d9093;
-}
+// .displaygrid_navbar {
+//   display: flex;
+//   position: relative;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: #333;
+//   color: #8d9093;
+// }
 
-.displaygrid_brand_title {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
+// .displaygrid_brand_title {
+//   font-size: 1.5rem;
+//   margin: 0.5rem;
+// }
 
-.displaygrid_navbar_links {
-  height: 100%;
-}
+// .displaygrid_navbar_links {
+//   height: 100%;
+// }
 
-.displaygrid_navbar_links ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+// .displaygrid_navbar_links ul {
+//   display: flex;
+//   margin: 0;
+//   padding: 0;
+// }
 
-.displaygrid_navbar_links li {
-  list-style: none;
-}
+// .displaygrid_navbar_links li {
+//   list-style: none;
+// }
 
-.displaygrid_toggle_button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-.displaygrid_toggle_button .displaygrid_bar {
-  height: 3px;
-  width: 100%;
-  background-color: #8d9093;
-  border-radius: 10px;
-}
+// .displaygrid_toggle_button {
+//   position: absolute;
+//   top: 0.75rem;
+//   right: 1rem;
+//   display: none;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   width: 30px;
+//   height: 21px;
+// }
+// .displaygrid_toggle_button .displaygrid_bar {
+//   height: 3px;
+//   width: 100%;
+//   background-color: #8d9093;
+//   border-radius: 10px;
+// }
 
-a.displaygrid_navlink {
-  color: #8d9093;
-  text-decoration: none;
-  padding: 1rem;
-}
-a.displaygrid_navlink:hover {
-  color: white;
-}
+// a.displaygrid_navlink {
+//   color: #8d9093;
+//   text-decoration: none;
+//   padding: 1rem;
+// }
+// a.displaygrid_navlink:hover {
+//   color: white;
+// }
 
 /*Carousel section */
 
@@ -322,7 +322,7 @@ a.displaygrid_navlink:hover {
 }
 
 .transitionToCarousel {
-  background-color: #e8f5e9; /*#eceff1;*/
+  background-color: #2568fb;
   height: 200px;
   width: 100vw;
   margin: 0;
@@ -426,17 +426,8 @@ a.displaygrid_navlink:hover {
     display: block;
   }
 }
-// @media only screen and (min-width: 820px) {
-//   .card_face {
-//     border-radius: 50%;
-//   }
-// }
 
 @media only screen and (min-width: 1024px) {
-  // .card_outer {
-  //   width: 800px;
-  //   height: 600px;
-  // }
   .card__body {
     padding: 130px 70px 20px 70px;
     height: 450px;
