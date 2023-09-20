@@ -1,6 +1,6 @@
 .slider-wrapper {
   width: 760px;
-  margin: auto auto 4rem auto;
+  margin: auto auto 10rem auto;
 }
 .slick-slide {
   text-align: center;
@@ -9,10 +9,9 @@
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
+
 .slick-slide:hover {
-  cursor: grabbing;
-  transform: scale(1.2, 1.2);
-  opacity: 0.9;
+  cursor: crosshair;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .slick-slide:focus {
@@ -26,6 +25,9 @@
   font-size: 4rem;
 }
 
+.Carousel {
+  margin: 5rem;
+}
 .slick-slide-image {
   max-width: 100%;
   height: auto;

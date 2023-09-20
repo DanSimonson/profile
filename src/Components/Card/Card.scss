@@ -21,7 +21,9 @@
 .hideMe {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 7rem;
 }
 @keyframes change {
   0% {

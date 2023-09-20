@@ -32,15 +32,6 @@ function DisplayGrid() {
             years of experience to help my clients achieve their goals.
           </p>
         </div>
-        <div
-          style={{
-            height: "1rem",
-            width: "100vw",
-            backgroundColor: "transparent",
-            padding: "3rem 0",
-            marginBottom: "10rem",
-          }}
-        />
 
         <Card />
 
@@ -55,20 +46,13 @@ function DisplayGrid() {
           ))}
           )
         </div>
+        <div className="transitionToCarousel">Some Personal Projects</div>
         <div className="carouselSection">
           <div className="background-animation-container">
-            <div className="transitionToCarousel">Some Personal Projects</div>
             <Carousel carousel={data.projects} />
           </div>
         </div>
       </div>
-      <div
-        style={{
-          height: "7rem",
-          width: "100vw",
-          backgroundColor: "transparent",
-        }}
-      ></div>
     </React.Fragment>
   );
 }

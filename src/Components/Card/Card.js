@@ -37,14 +37,14 @@ export default function SingleCard() {
           </div>
         </ReactCardFlip>
       </div>
-      <div
+      {/* <div
         style={{
           height: "1rem",
           width: "100vw",
           backgroundColor: "transparent",
           padding: "3rem 0",
         }}
-      />
+      /> */}
     </>
   );
 }

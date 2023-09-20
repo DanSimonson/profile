@@ -61,27 +61,29 @@ function Carousel({ carousel }) {
   };
 
   return (
-    <div className="Carousel">
-      <div className="slider-wrapper">
-        <Slider {...settings} dots="false">
-          {carousel.map((slide) => (
-            <div
-              className="slick-slide"
-              key={slide.id}
-              onClick={() => goToProject(slide.id)}
-            >
-              <h2 className="slick-slide-title">{slide.title}</h2>
-              <img
-                className="slick-slide-image"
-                alt="slick-slide-img"
-                src={`${slide.url}`}
-              />
-              <label className="slick-slide-label">{slide.label}</label>
-            </div>
-          ))}
-        </Slider>
+    <>
+      <div className="Carousel">
+        <div className="slider-wrapper">
+          <Slider {...settings} dots="false">
+            {carousel.map((slide) => (
+              <div
+                className="slick-slide"
+                key={slide.id}
+                onClick={() => goToProject(slide.id)}
+              >
+                <h2 className="slick-slide-title">{slide.title}</h2>
+                <img
+                  className="slick-slide-image"
+                  alt="slick-slide-img"
+                  src={`${slide.url}`}
+                />
+                <label className="slick-slide-label">{slide.label}</label>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

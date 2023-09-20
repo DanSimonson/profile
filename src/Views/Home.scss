@@ -11,7 +11,7 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: whitesmoke; // #fecd45; //whitesmoke;
+  background-color: whitesmoke;
   color: darkslategrey;
 }
 #root {
@@ -91,7 +91,7 @@ body {
 /* items */
 .wrapper {
   margin-top: 1.5rem;
-  color: darkslategray; //#222;
+  color: darkslategray;
 }
 .filler {
   height: 200px;
@@ -168,7 +168,7 @@ body {
   font-size: 30px;
   padding: 20px;
   font-weight: bold;
-  color: darkslategrey; //#fff;
+  color: darkslategrey;
   cursor: pointer;
 }
 .flip:hover {
