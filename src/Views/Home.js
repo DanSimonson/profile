@@ -48,11 +48,14 @@ function Home() {
               <header id="showcase" class="grid">
                 <div class="bg-image"></div>
                 <div class="content-wrap">
-                  <h1>Welcome to Mariposaweb</h1>
+                  <h1>Welcome to Dan Simonson's portfolio page</h1>
                   <p>
-                    A full service Developer focused on providing beautiful User
-                    Interfaces and optimized, stable API Creation and
-                    Consumption.
+                    I am a full-stack developer specializing in front-end
+                    development
+                  </p>
+                  <p>
+                    I focus on beautiful User Interfaces with optimized and
+                    stable API Creation and Consumption.
                   </p>
                 </div>
               </header>
@@ -63,10 +66,8 @@ function Home() {
                     <h2 class="content-title">Web & Application Development</h2>
                     <div class="content-text">
                       <p>
-                        I have spent several years boosting traffic, add
-                        immersive content, increase engagement with beautiful
-                        User Interfaces and optimized, stable API creation and
-                        consumption.
+                        I have spent several years boosting traffic, adding
+                        immersive content and increasing engagement.
                       </p>
                     </div>
                   </div>
@@ -84,7 +85,7 @@ function Home() {
                           <p>
                             I enjoy crafting polished user interactions that
                             surprise and delight users using primarly JavaScript
-                            framework React but I also have experienc with Vue
+                            framework React. but I also have experienc with Vue
                             and Angular.
                           </p>
                         </div>
@@ -99,10 +100,9 @@ function Home() {
                         <div class="card-content">
                           <h3 class="card-title">Back-End Developer</h3>
                           <p>
-                            I focus on optimized, stable API creation and
-                            consumption with Node, MongoDB, Mongoose, MySql, and
-                            headless cms's. I have provided a number of
-                            successful solutions.
+                            I have extensive background with Node, MongoDB,
+                            Mongoose, MySql, and headless cms's. I have provided
+                            a number of successful solutions.
                           </p>
                         </div>
                       </div>
@@ -129,11 +129,11 @@ function Home() {
                 <section id="section-c" class="grid">
                   <div class="content-wrap">
                     <h2 class="content-title">
-                      We handle all of your digital tech marketing needs
+                      I will handle all of your digital tech marketing needs
                     </h2>
                     <p>
-                      I spent years increasing user engagement with immersive
-                      content.
+                      I have spent years increasing user engagement with
+                      immersive content.
                     </p>
                   </div>
                 </section>

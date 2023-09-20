@@ -258,6 +258,12 @@ p {
 #section-a .content-wrap {
   padding: 0 1.5em;
 }
+#section-a .content-wrap h2 {
+  font-size: 3rem;
+}
+#section-a .content-wrap p {
+  font-size: 2rem;
+}
 
 /* Section A */
 
@@ -296,7 +302,12 @@ p {
   color: #333;
   padding: 2em;
 }
-
+#section-c .content-wrap h2 {
+  font-size: 3rem;
+}
+#section-c p {
+  font-size: 2rem;
+}
 /* Section D / Boxes */
 
 #section-d .box {
