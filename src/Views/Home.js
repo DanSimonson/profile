@@ -267,7 +267,7 @@ function Home() {
                 </div>
                 <div
                   style={{
-                    height: "30rem",
+                    height: "60rem",
                     width: "100vw",
                     backgroundColor: "whitesmoke",
                   }}
