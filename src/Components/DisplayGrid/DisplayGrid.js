@@ -12,9 +12,10 @@ function DisplayGrid() {
   return (
     <React.Fragment>
       <div className="bodyWrap">
-        <div className="heroImage">
+        <div className="spacerDiv"></div>
+        {/* <div className="heroImage">
           <div className="bg-image"></div>
-        </div>
+        </div> */}
         <div className="accomplishments">
           <h1>Contracting </h1>
           <h1> Accomplishments</h1>

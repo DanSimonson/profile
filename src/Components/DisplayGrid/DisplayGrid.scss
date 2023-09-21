@@ -36,11 +36,14 @@
 }
 
 .heroImage {
-  max-width: 100%;
-  margin: 5rem 0;
-  border-bottom: 10px solid black;
   display: none;
 }
+.spacerDiv {
+  background-color: transparent;
+  max-width: 100%;
+  height: 200px;
+}
+
 .bg-image {
   width: 100%;
   padding-top: 27%;
@@ -163,12 +166,12 @@
 
 /** media queries **/
 /** everything over **/
-@media only screen and (min-width: 768px) {
+
+@medai only screen and (min-width: 1300px) {
+}
+@media only screen and (min-width: 1024px) {
   .display-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .heroImage {
-    display: block;
   }
 }
 
