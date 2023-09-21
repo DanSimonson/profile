@@ -17,6 +17,7 @@ function DisplayGrid() {
           <div className="bg-image"></div>
         </div> */}
         <div className="accomplishments">
+          <p className="separater"></p>
           <h1>Contracting </h1>
           <h1> Accomplishments</h1>
           <p className="paragraph">
