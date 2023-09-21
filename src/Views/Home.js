@@ -265,13 +265,6 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <div
-                  style={{
-                    height: "60rem",
-                    width: "100vw",
-                    backgroundColor: "whitesmoke",
-                  }}
-                ></div>
                 <DisplayGrid />
               </div>
             </>

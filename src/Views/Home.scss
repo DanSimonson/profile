@@ -30,6 +30,7 @@ body {
 }
 
 #parent {
+  border: 5px solid red;
   height: 800px;
   font-size: 2.8rem;
 }
@@ -141,7 +142,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
   grid-template-rows: 300px;
   grid-gap: 5px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 }
 .grid-item {
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
@@ -359,10 +360,11 @@ p {
 
 @media (min-width: 767px) {
   .container {
-    height: 60vh;
+    height: 100vh; //60vh
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 12rem;
   }
   .helloSection {
     display: flex;
@@ -411,7 +413,7 @@ p {
     font-size: 6rem;
   }
   .container {
-    height: 60vh;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
