@@ -17,7 +17,7 @@ function Resume() {
             <p>Professional Summary</p>
           </div>
           <ul>
-            <li className="list">
+            <li>
               Over 20 years of IT experience which includes 6+ years as a
               Software Engineer.
             </li>
@@ -140,7 +140,7 @@ function Resume() {
           </ul>
           <div className="work-title">
             <p>Vasavah</p>
-            <p>Nov 2018 to June 2019</p>
+            <p>November 2018 to June 2019</p>
           </div>
           <ul>
             <li>Software Engineer, Manila, Philippines</li>
@@ -156,7 +156,7 @@ function Resume() {
           </ul>
           <div className="work-title" style={{ display: "flex" }}>
             <p>mariposaweb</p>
-            <p>Sept 2016 to Sept 2018</p>
+            <p>September 2016 to September 2018</p>
           </div>
           <ul>
             <li>Freelance Web Developer, Philippines</li>
