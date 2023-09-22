@@ -29,7 +29,7 @@ function Home() {
   }, []);
 
   const goToRoute = () => {
-    navigate("/onlineresume");
+    navigate("/resume");
   };
 
   let tempDiv = (
