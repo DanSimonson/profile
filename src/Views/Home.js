@@ -21,22 +21,32 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
+import { GetAPI } from "../Utils/GetAPI";
+// import useContentful from "../Utils/useContentfulAPI";
 
 function Home() {
+  const [contentfulAPI, SetContentfulAPI] = useState({});
   let navigate = useNavigate();
+  //let content = useContentful();
   useEffect(() => {
     AOS.init({ duration: 2000 });
+    ConsumeAPI();
   }, []);
+
+  const ConsumeAPI = async () => {
+    let data = await GetAPI();
+    console.log("data: ", data);
+  };
 
   const goToRoute = () => {
     navigate("/resume");
   };
 
-  let tempDiv = (
-    <div>
-      <h1>hello world </h1>
-    </div>
-  );
+  // let tempDiv = (
+  //   <div>
+  //     <h1>hello world </h1>
+  //   </div>
+  // );
 
   return (
     <>
