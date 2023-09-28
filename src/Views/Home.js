@@ -27,7 +27,6 @@ import { GetAPI } from "../Utils/GetAPI";
 function Home() {
   const [contentfulAPI, SetContentfulAPI] = useState({});
   let navigate = useNavigate();
-  //let content = useContentful();
   useEffect(() => {
     AOS.init({ duration: 2000 });
     ConsumeAPI();
@@ -35,7 +34,7 @@ function Home() {
 
   const ConsumeAPI = async () => {
     let data = await GetAPI();
-    console.log("data: ", data);
+    console.log("contentful_data: ", data);
   };
 
   const goToRoute = () => {
