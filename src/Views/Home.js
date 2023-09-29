@@ -25,8 +25,6 @@ import { GetAPI } from "../Utils/GetAPI";
 function Home() {
   const [cards, setCards] = useState([]);
   const [projects, setProjects] = useState([]);
-  let cardArr = [];
-  let projectArr = [];
   let navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -34,18 +32,20 @@ function Home() {
   }, []);
 
   const ConsumeAPI = async () => {
+    let cardArr = [];
+    let projectArr = [];
     let data = await GetAPI();
 
     for (let i = 0; i <= data.items.length - 1; i++) {
       if (data.items[i].sys.contentType.sys.id === "cards") {
-        if (cardArr.length < 9) {
+        if (cardArr.length < data.items.length) {
           cardArr.push(data.items[i].fields);
         }
       }
     }
     for (let i = 0; i <= data.items.length - 1; i++) {
       if (data.items[i].sys.contentType.sys.id === "projects") {
-        if (projectArr.length < 9) {
+        if (projectArr.length < data.items.length) {
           projectArr.push(data.items[i].fields);
         }
       }
