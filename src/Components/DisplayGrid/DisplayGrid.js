@@ -7,8 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import data from "../../data";
 
 function DisplayGrid({ cards, projects }) {
-  //let tempArray = data.cards;
-
   return (
     <React.Fragment>
       <div className="bodyWrap">
@@ -39,7 +37,7 @@ function DisplayGrid({ cards, projects }) {
         <div className="transitionToCarousel">Some Personal Projects</div>
         <div className="carouselSection">
           <div className="background-animation-container">
-            <Carousel carousel={data.projects} projects={projects} />
+            <Carousel projects={projects} />
           </div>
         </div>
       </div>

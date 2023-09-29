@@ -45,7 +45,7 @@ function Carousel({ projects }) {
                   alt="slick-slide-img"
                   src={`${slide.picture}`}
                 />
-                {/* <label className="slick-slide-label">{slide.label}</label> */}
+                {/* <label className="slick-slide-label">{slide.label}</label>  */}
               </div>
             ))}
           </Slider>

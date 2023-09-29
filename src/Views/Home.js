@@ -12,7 +12,6 @@ import {
   faGraduationCap,
   faBriefcase,
   faHeart,
-  faCoffee,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -22,7 +21,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
 import { GetAPI } from "../Utils/GetAPI";
-// import useContentful from "../Utils/useContentfulAPI";
 
 function Home() {
   const [cards, setCards] = useState([]);
@@ -37,8 +35,7 @@ function Home() {
 
   const ConsumeAPI = async () => {
     let data = await GetAPI();
-    //let tempCardArr = [];
-    //let tempProjectArr = [];
+
     for (let i = 0; i <= data.items.length - 1; i++) {
       if (data.items[i].sys.contentType.sys.id === "cards") {
         if (cardArr.length < 9) {
