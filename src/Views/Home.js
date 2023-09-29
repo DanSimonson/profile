@@ -34,8 +34,11 @@ function Home() {
   const ConsumeAPI = async () => {
     let cardArr = [];
     let projectArr = [];
+    let tempCardArr = [];
+    let element = {};
     let data = await GetAPI();
 
+    /* adjust for proper array structure */
     for (let i = 0; i <= data.items.length - 1; i++) {
       if (data.items[i].sys.contentType.sys.id === "cards") {
         if (cardArr.length < data.items.length) {
@@ -50,7 +53,17 @@ function Home() {
         }
       }
     }
-    setCards(cardArr);
+
+    /* ensure next egg is always the last on the list */
+    cardArr.forEach((card) => {
+      if (card.title !== "NEXT EGG") {
+        tempCardArr.push(card);
+      } else {
+        element = card;
+      }
+    });
+    tempCardArr.push(element);
+    setCards(tempCardArr);
     setProjects(projectArr);
   };
 
