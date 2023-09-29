@@ -6,16 +6,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "../../data";
 
-function DisplayGrid() {
-  let tempArray = data.cards;
+function DisplayGrid({ cards, projects }) {
+  //let tempArray = data.cards;
 
   return (
     <React.Fragment>
       <div className="bodyWrap">
         <div className="spacerDiv"></div>
-        {/* <div className="heroImage">
-          <div className="bg-image"></div>
-        </div> */}
         <div className="accomplishments">
           <p className="separater"></p>
           <h1>Contracting </h1>
@@ -29,7 +26,7 @@ function DisplayGrid() {
         <Card />
 
         <div className="display-container">
-          {tempArray.map((card, index) => (
+          {cards.map((card, index) => (
             <div key={index} className="display-card animateCard">
               <div className="display-content">
                 <h3>{card.title}</h3>
@@ -42,7 +39,7 @@ function DisplayGrid() {
         <div className="transitionToCarousel">Some Personal Projects</div>
         <div className="carouselSection">
           <div className="background-animation-container">
-            <Carousel carousel={data.projects} />
+            <Carousel carousel={data.projects} projects={projects} />
           </div>
         </div>
       </div>

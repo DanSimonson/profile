@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Carousel({ carousel }) {
+function Carousel({ projects }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -65,7 +65,7 @@ function Carousel({ carousel }) {
       <div className="Carousel">
         <div className="slider-wrapper">
           <Slider {...settings} dots="false">
-            {carousel.map((slide) => (
+            {projects.map((slide) => (
               <div
                 className="slick-slide"
                 key={slide.id}
@@ -75,9 +75,9 @@ function Carousel({ carousel }) {
                 <img
                   className="slick-slide-image"
                   alt="slick-slide-img"
-                  src={`${slide.url}`}
+                  src={`${slide.picture}`}
                 />
-                <label className="slick-slide-label">{slide.label}</label>
+                {/* <label className="slick-slide-label">{slide.label}</label> */}
               </div>
             ))}
           </Slider>

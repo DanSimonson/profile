@@ -25,7 +25,10 @@ import { GetAPI } from "../Utils/GetAPI";
 // import useContentful from "../Utils/useContentfulAPI";
 
 function Home() {
-  const [contentfulAPI, SetContentfulAPI] = useState({});
+  const [cards, setCards] = useState([]);
+  const [projects, setProjects] = useState([]);
+  let cardArr = [];
+  let projectArr = [];
   let navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -34,18 +37,29 @@ function Home() {
 
   const ConsumeAPI = async () => {
     let data = await GetAPI();
-    console.log("contentful_data: ", data);
+    //let tempCardArr = [];
+    //let tempProjectArr = [];
+    for (let i = 0; i <= data.items.length - 1; i++) {
+      if (data.items[i].sys.contentType.sys.id === "cards") {
+        if (cardArr.length < 9) {
+          cardArr.push(data.items[i].fields);
+        }
+      }
+    }
+    for (let i = 0; i <= data.items.length - 1; i++) {
+      if (data.items[i].sys.contentType.sys.id === "projects") {
+        if (projectArr.length < 9) {
+          projectArr.push(data.items[i].fields);
+        }
+      }
+    }
+    setCards(cardArr);
+    setProjects(projectArr);
   };
 
   const goToRoute = () => {
     navigate("/resume");
   };
-
-  // let tempDiv = (
-  //   <div>
-  //     <h1>hello world </h1>
-  //   </div>
-  // );
 
   return (
     <>
@@ -274,7 +288,7 @@ function Home() {
                     </p>
                   </div>
                 </div>
-                <DisplayGrid />
+                <DisplayGrid cards={cards} projects={projects} />
               </div>
             </>
           )
