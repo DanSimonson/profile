@@ -7,11 +7,6 @@ export const GetAPI = async () => {
     host: "preview.contentful.com",
   });
   try {
-    // client.getEntries()
-    // const entries = await client.getEntries({
-    //   content_type: "carousel",
-    //   select: "fields",
-    // });
     const entries = await client.getEntries();
     if (entries.items) {
       return {
