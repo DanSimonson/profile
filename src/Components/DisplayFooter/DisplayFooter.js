@@ -19,7 +19,7 @@ const DisplayFooter = () => {
           </a>
         </p>
         <p className="display-footer-company-name">
-          mariposaweb.net &copy; 2021
+          mariposaweb.net &copy; 2023
         </p>
       </footer>
     </>
