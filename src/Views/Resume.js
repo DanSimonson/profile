@@ -49,8 +49,8 @@ function Resume() {
             <p>Work History</p>
           </div>
           <div className="work-title">
-            <p>TCS (client Verizon)</p>
-            <p>February 2023 to August 2023</p>
+            <p>TCS (client Verizon, Safeway/Albertsons)</p>
+            <p>February 2021 to August 2023</p>
           </div>
           <ul>
             <li>Software Engineer, Austin, TX</li>
@@ -59,35 +59,6 @@ function Resume() {
               across different stages of the Software Development Life Cycle,
               increasing revenue with new promotions for smart watches.
             </li>
-          </ul>
-          <div className="work-title">
-            <p>Infosys (client American Family Insurance)</p>
-            <p>October 2022 to January 2023</p>
-          </div>
-          <ul>
-            <li>Software Engineer, Austin, TX</li>
-            <li>
-              Deliver high quality code for a new motorcycle insurance page,
-              boosting customer engagement
-            </li>
-          </ul>
-          <div className="work-title">
-            <p>Infosys (client: Allstate Insurance)</p>
-            <p>February 2022 to September 2022</p>
-          </div>
-          <ul>
-            <li>Software Engineer, Austin, Texas</li>
-            <li>
-              Helped create a micro-frontend increasing ease of use and
-              adaptability to change for future insurance pages.
-            </li>
-          </ul>
-          <div className="work-title">
-            <p>TCS (client: Safeway/Albertsons)</p>
-            <p>February 2021 to January 2022 </p>
-          </div>
-          <ul>
-            <li>Software Engineer, Austin, TX</li>
             <li>
               Developing new user-facing features using React.js, JavaScript,
               Redux, Node.js, CSS. Built reusable components and front-end
@@ -95,7 +66,21 @@ function Resume() {
               performance. Utilized Redux, Thunk, JWT Authentication.
             </li>
           </ul>
-
+          <div className="work-title">
+            <p>Infosys (client American Family Insurance, Allstate Insuance)</p>
+            <p>February 2022 to January 2023</p>
+          </div>
+          <ul>
+            <li>Software Engineer, Austin, TX</li>
+            <li>
+              Delivered high quality code for a new motorcycle insurance page,
+              boosting customer engagement
+            </li>
+            <li>
+              Helped create a micro-frontend increasing ease of use and
+              adaptability to change for future insurance pages.
+            </li>
+          </ul>
           <div className="work-title">
             <p>Matrix (client AuctionOS)</p>
             <p>October 2020 to Dec 2020</p>
@@ -103,7 +88,7 @@ function Resume() {
           <ul>
             <li>Software Engineer, Atlanta, GA</li>
             <li>
-              Designed, coded and maintained new features for using HTML, CSS,
+              Designed, coded and maintained new features using HTML, CSS,
               JavaScript, Vue. Full-Stack Development with MySQL and Node.js.
               Created functional applications that feature user-friendly design
               and clear navigation for online car auction software. Worked in
