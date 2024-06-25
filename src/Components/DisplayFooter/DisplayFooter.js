@@ -1,6 +1,6 @@
 import React from "react";
 import "./DisplayFooter.scss";
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 
 const DisplayFooter = () => {
   return (
@@ -11,7 +11,7 @@ const DisplayFooter = () => {
         </p>
         <p className="display-footer-links">
           <a
-            href="https://heuristic-neumann-ad864a.netlify.app"
+            href="https://mariposablog.onrender.com"
             target="_blank"
             className="flip"
           >
