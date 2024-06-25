@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Carousel({ projects }) {
-  console.log("projects: ", projects);
+  
   const settings = {
     dots: true,
     infinite: true,

@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./DisplayGrid.scss";
 import Carousel from "../Carousel/Carousel";
 import Card from "../Card/Card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import data from "../../data";
+import { motion } from "framer-motion";
 
 function DisplayGrid({ cards, projects }) {
+  
   return (
     <React.Fragment>
       <div className="bodyWrap">
@@ -25,12 +26,21 @@ function DisplayGrid({ cards, projects }) {
 
         <div className="display-container">
           {cards.map((card, index) => (
-            <div key={index} className="display-card animateCard">
+            <motion.div
+              whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              key={index}
+              className="display-card animateCard"
+            >
               <div className="display-content">
                 <h3>{card.title}</h3>
                 <p>{card.content}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
           )
         </div>
