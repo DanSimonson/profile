@@ -12,6 +12,7 @@ import {
   faGraduationCap,
   faBriefcase,
   faHeart,
+  faRssSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -220,7 +221,17 @@ function Home() {
                       ></FontAwesomeIcon>
                     </div>
                   </a>
+
+                  <a href="https://mariposablog.onrender.com/" target="blank">
+                    <div className="boxes bounceMeFive">
+                      <FontAwesomeIcon
+                        icon={faRssSquare}
+                        className="stayWhite"
+                      ></FontAwesomeIcon>
+                    </div>
+                  </a>
                 </div>
+
                 <div className="helloSection">
                   <div id="left">
                     <p>Hi. I’m Dan Simonson, nice to meet you.</p>
