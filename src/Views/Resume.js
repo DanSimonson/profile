@@ -49,7 +49,7 @@ function Resume() {
             <p>Work History</p>
           </div>
           <div className="work-title">
-            <p>TCS (client Verizon, Safeway/Albertsons)</p>
+            <p>TCS</p>
             <p>February 2021 to August 2023</p>
           </div>
           <ul>
@@ -57,7 +57,7 @@ function Resume() {
             <li>
               Interfaced with key stakeholders and applied technical proficiency
               across different stages of the Software Development Life Cycle,
-              increasing revenue with new promotions for smart watches.
+              increasing revenue.
             </li>
             <li>
               Developing new user-facing features using React.js, JavaScript,
@@ -67,22 +67,7 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Infosys (client American Family Insurance, Allstate Insuance)</p>
-            <p>February 2022 to January 2023</p>
-          </div>
-          <ul>
-            <li>Software Engineer, Austin, TX</li>
-            <li>
-              Delivered high quality code for a new motorcycle insurance page,
-              boosting customer engagement
-            </li>
-            <li>
-              Helped create a micro-frontend increasing ease of use and
-              adaptability to change for future insurance pages.
-            </li>
-          </ul>
-          <div className="work-title">
-            <p>Matrix (client AuctionOS)</p>
+            <p>Matrix</p>
             <p>October 2020 to Dec 2020</p>
           </div>
           <ul>
@@ -96,7 +81,7 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Cognizant (clients Macys, Bayer)</p>
+            <p>Cognizant</p>
             <p>February 2020 to September 2020</p>
           </div>
           <ul>
@@ -110,7 +95,7 @@ function Resume() {
             </li>
           </ul>
           <div className="work-title">
-            <p>Charter Global (client Routematch By Uber)</p>
+            <p>Charter Global</p>
             <p> August 2019 to January 2020</p>
           </div>
           <ul>
