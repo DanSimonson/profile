@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./DisplayGrid.scss";
 import Carousel from "../Carousel/Carousel";
 import Card from "../Card/Card";
@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 
 function DisplayGrid({ cards, projects }) {
-  
   return (
     <React.Fragment>
       <div className="bodyWrap">
@@ -32,7 +31,7 @@ function DisplayGrid({ cards, projects }) {
               onHoverEnd={(e) => {}}
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: index * 0.3 }}
               key={index}
               className="display-card animateCard"
             >
