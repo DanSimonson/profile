@@ -2,10 +2,6 @@
 
 > portfolio website bootstrapped with Create React App.
 
-### DEMO
-
-[Click Here For DEMO ](https://mariposaweb.net/)
-
 ```
 
 ## App Info
